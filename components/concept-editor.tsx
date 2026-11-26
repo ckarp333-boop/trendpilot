@@ -2,8 +2,9 @@
 
 import Link from "next/link";
 import { useId, useState } from "react";
+import { CalendarCheck, CircleCheck } from "lucide-react";
+import { PlatformChip } from "@/components/trend-bits";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
@@ -61,40 +62,76 @@ export function ConceptEditor({
   }
 
   const field = (name: string) => `${uid}-${name}`;
-  const edit = <T,>(setter: (v: T) => void) => (v: T) => {
-    setter(v);
-    setSaved(false);
-  };
+  const edit =
+    <T,>(setter: (v: T) => void) =>
+    (v: T) => {
+      setter(v);
+      setSaved(false);
+    };
+  const labelClass = "text-xs font-medium uppercase tracking-wide text-muted-foreground";
 
   return (
-    <Card className="h-full py-4" aria-label={`Post idea ${index + 1}`}>
-      <CardContent className="flex h-full flex-col gap-3">
-        <p className="text-sm font-semibold text-muted-foreground">Idea {index + 1}</p>
+    <article
+      aria-label={`Post idea ${index + 1}`}
+      className={`flex h-full flex-col overflow-hidden rounded-2xl border bg-card shadow-xs transition-shadow hover:shadow-md ${
+        saved ? "ring-2 ring-success/40" : ""
+      }`}
+    >
+      <header className="flex items-center justify-between gap-2 border-b bg-muted/40 px-5 py-3">
+        <span className="text-sm font-semibold">Idea {index + 1}</span>
+        <PlatformChip platform={platform} />
+      </header>
 
-        <div className="space-y-1">
-          <Label htmlFor={field("hook")}>Hook</Label>
-          <Input id={field("hook")} value={hook} onChange={(e) => edit(setHook)(e.target.value)} />
+      <div className="flex flex-1 flex-col gap-3.5 p-5">
+        <div className="space-y-1.5">
+          <Label htmlFor={field("hook")} className={labelClass}>
+            Hook
+          </Label>
+          <Input
+            id={field("hook")}
+            className="font-medium"
+            value={hook}
+            onChange={(e) => edit(setHook)(e.target.value)}
+          />
         </div>
-        <div className="space-y-1">
-          <Label htmlFor={field("caption")}>Caption</Label>
+        <div className="space-y-1.5">
+          <Label htmlFor={field("caption")} className={labelClass}>
+            Caption
+          </Label>
           <Textarea id={field("caption")} rows={5} value={caption} onChange={(e) => edit(setCaption)(e.target.value)} />
         </div>
-        <div className="space-y-1">
-          <Label htmlFor={field("visual")}>Visual idea</Label>
-          <Textarea id={field("visual")} rows={3} value={visualIdea} onChange={(e) => edit(setVisualIdea)(e.target.value)} />
+        <div className="space-y-1.5">
+          <Label htmlFor={field("visual")} className={labelClass}>
+            Visual idea
+          </Label>
+          <Textarea
+            id={field("visual")}
+            rows={3}
+            value={visualIdea}
+            onChange={(e) => edit(setVisualIdea)(e.target.value)}
+          />
         </div>
-        <div className="space-y-1">
-          <Label htmlFor={field("tags")}>Hashtags</Label>
-          <Input id={field("tags")} value={hashtags} onChange={(e) => edit(setHashtags)(e.target.value)} />
+        <div className="space-y-1.5">
+          <Label htmlFor={field("tags")} className={labelClass}>
+            Hashtags
+          </Label>
+          <Input
+            id={field("tags")}
+            className="text-primary"
+            value={hashtags}
+            onChange={(e) => edit(setHashtags)(e.target.value)}
+          />
         </div>
         <div className="grid grid-cols-2 gap-2">
-          <div className="space-y-1">
-            <Label htmlFor={field("platform")}>Platform</Label>
+          <div className="space-y-1.5">
+            <Label htmlFor={field("platform")} className={labelClass}>
+              Platform
+            </Label>
             <select
               id={field("platform")}
               value={platform}
               onChange={(e) => edit(setPlatform)(e.target.value)}
-              className="h-8 w-full rounded-lg border border-input bg-transparent px-2 text-sm"
+              className="h-8 w-full rounded-lg border border-input bg-transparent px-2 text-sm outline-none focus-visible:ring-3 focus-visible:ring-ring/50"
             >
               {platformOptions.map((p) => (
                 <option key={p} value={p}>
@@ -103,36 +140,46 @@ export function ConceptEditor({
               ))}
             </select>
           </div>
-          <div className="space-y-1">
-            <Label htmlFor={field("date")}>Post on</Label>
+          <div className="space-y-1.5">
+            <Label htmlFor={field("date")} className={labelClass}>
+              Post on
+            </Label>
             <Input id={field("date")} type="date" value={date} onChange={(e) => edit(setDate)(e.target.value)} />
           </div>
         </div>
-        <div className="space-y-1">
-          <Label htmlFor={field("window")}>Posting window</Label>
-          <Input id={field("window")} value={postingWindow} onChange={(e) => edit(setPostingWindow)(e.target.value)} />
+        <div className="space-y-1.5">
+          <Label htmlFor={field("window")} className={labelClass}>
+            Posting window
+          </Label>
+          <Input
+            id={field("window")}
+            value={postingWindow}
+            onChange={(e) => edit(setPostingWindow)(e.target.value)}
+          />
         </div>
+      </div>
 
-        <div className="mt-auto space-y-2 pt-2">
-          {error && (
-            <p role="alert" className="text-sm text-destructive">
-              {error}
-            </p>
-          )}
-          {saved ? (
-            <p role="status" className="text-sm">
-              Saved to calendar ✓{" "}
-              <Link href="/calendar" className="underline underline-offset-2">
-                View calendar
-              </Link>
-            </p>
-          ) : (
-            <Button className="w-full" onClick={save}>
-              Approve &amp; save to calendar
-            </Button>
-          )}
-        </div>
-      </CardContent>
-    </Card>
+      <footer className="space-y-2 border-t px-5 py-4">
+        {error && (
+          <p role="alert" className="text-sm text-destructive">
+            {error}
+          </p>
+        )}
+        {saved ? (
+          <p role="status" className="flex items-center gap-1.5 text-sm text-success">
+            <CircleCheck aria-hidden className="size-4" />
+            Saved to calendar ✓
+            <Link href="/calendar" className="ml-auto font-medium text-foreground underline underline-offset-2">
+              View calendar
+            </Link>
+          </p>
+        ) : (
+          <Button className="w-full" size="lg" onClick={save}>
+            <CalendarCheck aria-hidden className="size-4" />
+            Approve &amp; save to calendar
+          </Button>
+        )}
+      </footer>
+    </article>
   );
 }

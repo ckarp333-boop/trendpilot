@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-/** Nav link that is highlighted on its own page (the dashboard also covers /trends/*). */
+/** Nav pill that is highlighted on its own page (the dashboard also covers /trends/*). */
 export function NavLink({ href, children }: { href: string; children: React.ReactNode }) {
   const pathname = usePathname() ?? "";
   const active = href === "/" ? pathname === "/" || pathname.startsWith("/trends") : pathname.startsWith(href);
@@ -11,7 +11,11 @@ export function NavLink({ href, children }: { href: string; children: React.Reac
     <Link
       href={href}
       aria-current={active ? "page" : undefined}
-      className={active ? "font-medium text-foreground" : "text-muted-foreground hover:text-foreground"}
+      className={`flex items-center gap-1.5 rounded-full px-3 py-1.5 transition-colors ${
+        active
+          ? "bg-secondary font-medium text-foreground shadow-[inset_0_0_0_1px_var(--border)]"
+          : "text-muted-foreground hover:bg-secondary/60 hover:text-foreground"
+      }`}
     >
       {children}
     </Link>
