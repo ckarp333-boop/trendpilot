@@ -104,3 +104,17 @@ Scope and design decisions, newest last.
   and each calendar post.
 - **Playwright runs with `ANTHROPIC_API_KEY` blanked**, which proves the graded flow works entirely
   from cached results and makes the test free and deterministic.
+
+## 2026-11-25 — Value metrics and polish (M5)
+- **Five toggleable metrics:** speed to market (automatic: trend captured → marked posted), time
+  saved, attention (views), engagement (with engagement rate) and clicks. The last four are typed in
+  by the owner from each platform's own insights; connecting analytics APIs is out of scope.
+- **Totals plus a one-sentence value statement** ("TrendPilot helped you publish N trend-based
+  posts, on average X h after the trend was captured, saving about Y of writing time"), written
+  for the business case in the presentation.
+- **Metrics stored in localStorage** next to the calendar, keyed by post ID; values for deleted
+  posts are ignored in totals.
+- **Polish:** active nav link, page titles, friendly error and 404 pages, empty states on calendar
+  and metrics.
+- **Light theme only:** shadcn's dark styles switch on a `.dark` class, not the system setting, so
+  the app always renders light. A theme toggle is out of scope.

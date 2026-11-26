@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "TrendPilot",
+  title: { default: "TrendPilot", template: "%s · TrendPilot" },
   description:
     "Safe YouTube trends turned into post ideas for a local bakery. Proof of concept for ENTI 633.",
 };
