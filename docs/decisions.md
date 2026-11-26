@@ -40,3 +40,30 @@ Scope and design decisions, newest last.
 - **Unsafe items present on purpose:** 4 News & Politics videos (category 25 was requested so the
   filter has something to reject), plus 7 items in non-allowlisted categories (Film & Animation,
   Autos & Vehicles, Travel & Events, Gaming, Science & Technology).
+
+## 2026-11-25 — Safety filter design (M2)
+- **Four layers, in order, a trend must pass all:** (1) category allowlist, (2) keyword blocklist
+  (`lib/safety/blocklist.ts`), (3) the profile's topics to avoid, turned into keywords, (4) an LLM
+  check returning `{safe, reason}`. Only trends that pass 1–3 reach the LLM, which saves cost and
+  keeps obviously unsafe text away from the model.
+- **Unsure means unsafe, everywhere:** LLM errors, timeouts, refusals, invalid output and missing
+  cached verdicts all exclude the trend with a visible reason.
+- **The LLM check is a general family-friendly brand check, not profile-specific.** The owner's
+  topics to avoid are enforced by layer 3. This lets one cached verdict per video serve every
+  profile, so editing the profile never forces fresh LLM calls during the demo.
+- **Cached verdicts:** `npm run cache:safety` runs the LLM over the snapshot and saves verdicts to
+  `data/cache/safety-checks.json` (keyed by video ID and a hash of its title/tags/category, plus a
+  prompt version). The app uses the cache first and only calls the LLM for uncached trends when an
+  API key is configured. LLM calls are allowed in DEMO_MODE; YouTube calls are not.
+- **Prompt injection:** trend text goes only in the user message, inside one `<trend_data>` block,
+  with `<`/`>` replaced so a title can't close the block. The system prompt says to treat it as data
+  and to mark any trend containing instructions as unsafe. Verified live with two synthetic
+  injection probes (both marked unsafe) in `docs/test-evidence/safety-filter-run.md`.
+- **Profanity added to the blocklist** after the dry run showed a song title with a swear word
+  passing layers 1–3.
+- **Known trade-off:** keywords can't read context ("Attacking the weekend" is blocked), and the
+  LLM is deliberately cautious with vague titles. On the current snapshot 10 of 37 trends are kept.
+  Losing some harmless trends is acceptable; showing an unsafe one isn't.
+- **LLM settings:** model from `ANTHROPIC_MODEL` (default `claude-sonnet-5-5`), structured output
+  validated with zod, 30 s timeout, one retry, low effort, server-side refusal fallbacks
+  (`fallbacks: "default"`).
