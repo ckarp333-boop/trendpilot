@@ -89,3 +89,18 @@ Scope and design decisions, newest last.
   so the demo needs no LLM calls unless the owner edits the profile. Caches are written only by
   scripts (Vercel's filesystem is read-only); live results are not persisted.
 - **Effort:** low for fit scoring (a ranking task), medium for concepts (creative writing).
+
+## 2026-11-25 — Main flow UI (M4)
+- **Profile and calendar live in localStorage** (no login, no database), validated with zod on
+  read so a corrupt value falls back safely. If storage is blocked, the app keeps working for the
+  current tab.
+- **Saving an unchanged profile keeps the demo profile**, so the saved AI results (and the
+  offline demo) keep working. Any real edit triggers fresh AI scoring and ideas.
+- **Human approval is the save step:** the button reads "Approve & save to calendar", every idea is
+  editable first, and nothing is ever posted automatically.
+- **Speed-to-market:** "Mark posted" stores a timestamp and shows how long after the trend was
+  captured the post went out (input for the M5 metrics panel).
+- **Every trend shows its source link**, on the dashboard, the trend page, the Filtered out panel
+  and each calendar post.
+- **Playwright runs with `ANTHROPIC_API_KEY` blanked**, which proves the graded flow works entirely
+  from cached results and makes the test free and deterministic.

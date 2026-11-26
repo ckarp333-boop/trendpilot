@@ -17,7 +17,9 @@ test("shared nav reaches every page", async ({ page }) => {
     await expect(page).toHaveURL(p.path);
     await expect(page.getByRole("heading", { name: p.heading })).toBeVisible();
   }
+});
 
-  await page.goto("/trends/demo-1");
-  await expect(page.getByRole("heading", { name: "Trend demo-1" })).toBeVisible();
+test("an unknown trend shows a friendly message", async ({ page }) => {
+  await page.goto("/trends/does-not-exist");
+  await expect(page.getByRole("heading", { name: "Trend not found" })).toBeVisible();
 });

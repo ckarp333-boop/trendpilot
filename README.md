@@ -24,6 +24,11 @@ npm run dev                  # http://localhost:3000
 | `npm test` | Vitest unit tests |
 | `npm run test:e2e` | Playwright end-to-end test (builds and starts the app) |
 | `npm run build` | Production build |
+| `npm run fetch:youtube` | Refresh `data/youtube-snapshot.json` from the YouTube API (needs `YOUTUBE_API_KEY`) |
+| `npm run cache:safety` | Re-run the AI safety check on the snapshot and save verdicts (needs `ANTHROPIC_API_KEY`) |
+| `npm run cache:generate` | Re-generate demo fit scores and post ideas (needs `ANTHROPIC_API_KEY`) |
+
+After refreshing the snapshot, run `cache:safety` and then `cache:generate` so the demo works offline.
 
 ## Licence
 

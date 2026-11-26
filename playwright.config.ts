@@ -17,6 +17,7 @@ export default defineConfig({
     url: `http://localhost:${PORT}`,
     reuseExistingServer: !process.env.CI,
     timeout: 180_000,
-    env: { DEMO_MODE: "true" },
+    // Blank key: the app must run purely from cached AI results, so tests cost nothing.
+    env: { DEMO_MODE: "true", ANTHROPIC_API_KEY: "" },
   },
 });
