@@ -67,3 +67,25 @@ Scope and design decisions, newest last.
 - **LLM settings:** model from `ANTHROPIC_MODEL` (default `claude-sonnet-5-5`), structured output
   validated with zod, 30 s timeout, one retry, low effort, server-side refusal fallbacks
   (`fallbacks: "default"`).
+
+## 2026-11-25 — Fit scoring and concept generation (M3)
+- **Fit scores in one call per profile:** all safe trends are scored 0–100 with a one-line reason
+  in a single LLM call (each trend in its own `<trend_data>` block). One call keeps the dashboard
+  fast when the owner edits the profile. Trends have already passed the safety filter (which
+  catches injection attempts) before they're scored together. If scoring fails, trends still show,
+  unranked, with a friendly note.
+- **Concepts per trend:** `POST /api/generate` returns 3 concepts (hook, caption, visual idea,
+  hashtags, platform, posting window). It only generates for trends on the profile's safe list
+  (404 otherwise).
+- **Originality enforced in code, not just the prompt:** a concept that contains the video title
+  (15+ characters) or the channel name is rejected and regenerated once.
+- **Retry policy:** the SDK retries timeouts, 429s and 5xx once; the app retries once more only
+  for invalid output. Every failure maps to a friendly message and HTTP status; details stay in
+  the server log.
+- **Profile is delimited too:** the owner's profile is free text, so it goes in a sanitised
+  `<brand_profile>` block in the user message, never the system prompt.
+- **Caching:** results are cached by trend content + profile hash + prompt version.
+  `npm run cache:generate` pre-generated fit scores and all 10 concept sets for the demo profile,
+  so the demo needs no LLM calls unless the owner edits the profile. Caches are written only by
+  scripts (Vercel's filesystem is read-only); live results are not persisted.
+- **Effort:** low for fit scoring (a ranking task), medium for concepts (creative writing).

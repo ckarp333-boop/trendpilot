@@ -11,7 +11,8 @@
     "test:watch": "vitest",
     "test:e2e": "playwright test",
     "fetch:youtube": "tsx scripts/fetch-youtube.ts",
-    "cache:safety": "tsx scripts/build-safety-cache.ts"
+    "cache:safety": "tsx scripts/build-safety-cache.ts",
+    "cache:generate": "tsx scripts/build-generate-cache.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^1.14.0",
