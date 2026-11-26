@@ -29,7 +29,7 @@ export function Dashboard() {
       <PageHeader
         eyebrow="Trend radar · YouTube Canada"
         icon={Radar}
-        title="Dashboard"
+        title="DASHBOARD"
         description={`Safe trending topics for ${state.status === "ready" ? state.data.businessName : profile.businessName}, ranked by how naturally they fit your brand.`}
       />
 
