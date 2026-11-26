@@ -1,0 +1,40 @@
+{
+  "_note": "Fictional demo business. All details are invented for the ENTI 633 proof of concept.",
+  "businessName": "Rise & Grind Bakery",
+  "businessType": "Independent bakery and cafe",
+  "location": "Calgary, Alberta, Canada",
+  "products": [
+    "Sourdough loaves",
+    "Croissants and pain au chocolat",
+    "Cinnamon buns (Saturday special)",
+    "Seasonal fruit galettes",
+    "Custom celebration cakes",
+    "Espresso drinks and drip coffee",
+    "Gluten-free brownies"
+  ],
+  "values": [
+    "Baked fresh every morning from scratch",
+    "Local Alberta flour and dairy",
+    "Friendly neighbourhood spot",
+    "Low waste: day-old bread donated to a local food bank"
+  ],
+  "tone": "Warm, playful and down-to-earth. Light puns are welcome, never snarky.",
+  "audience": [
+    "Young professionals grabbing coffee before work",
+    "Families on weekend outings",
+    "University students looking for a study spot",
+    "Locals ordering cakes for birthdays and events"
+  ],
+  "topicsToAvoid": [
+    "Politics and elections",
+    "Religion",
+    "Tragedies, accidents and violence",
+    "Alcohol and drinking challenges",
+    "Diet culture and weight-loss claims",
+    "Gambling and betting",
+    "Criticizing competitors",
+    "Controversial influencers or celebrity drama"
+  ],
+  "postingPlatforms": ["Instagram", "TikTok", "Facebook"],
+  "openingHours": "Tue-Sun 7:00-16:00"
+}

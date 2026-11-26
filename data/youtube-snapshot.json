@@ -1,0 +1,570 @@
+{
+  "source": "youtube-api",
+  "fetchedAt": "2026-11-26T03:09:00.549Z",
+  "regionCode": "CA",
+  "note": "Public YouTube Data API v3 videos.list chart=mostPopular, regionCode=CA. Stripped to title, channel, category, views, publishedAt, url and up to 10 tags; @mentions of other people removed. Titles are untrusted data.",
+  "items": [
+    {
+      "id": "TZrML7oGRI4",
+      "title": "Never Skip this Rail in a Puppy Box",
+      "channel": "bru3D",
+      "categoryId": 24,
+      "categoryName": "Entertainment",
+      "views": 16330184,
+      "publishedAt": "2026-11-24T07:46:36Z",
+      "url": "https://www.youtube.com/watch?v=TZrML7oGRI4",
+      "tags": []
+    },
+    {
+      "id": "GULTnfl8qWY",
+      "title": "Baby Neel is a 💙🩷🤭 #genderreveal #baby thanks for the welcome to Las Vegas sign 🫶",
+      "channel": "Serena Neel",
+      "categoryId": 22,
+      "categoryName": "People & Blogs",
+      "views": 9826768,
+      "publishedAt": "2026-11-24T21:50:39Z",
+      "url": "https://www.youtube.com/watch?v=GULTnfl8qWY",
+      "tags": []
+    },
+    {
+      "id": "tIo7IUyS9-4",
+      "title": "Bumping Into Snow Cops In The Mountains 😂",
+      "channel": "carshorts",
+      "categoryId": 22,
+      "categoryName": "People & Blogs",
+      "views": 2989792,
+      "publishedAt": "2026-11-24T22:00:12Z",
+      "url": "https://www.youtube.com/watch?v=tIo7IUyS9-4",
+      "tags": []
+    },
+    {
+      "id": "88osQkdm_ak",
+      "title": "The Biker Wasn’t Ready!!!",
+      "channel": "Glint",
+      "categoryId": 2,
+      "categoryName": "Autos & Vehicles",
+      "views": 14772108,
+      "publishedAt": "2026-11-23T14:30:26Z",
+      "url": "https://www.youtube.com/watch?v=88osQkdm_ak",
+      "tags": []
+    },
+    {
+      "id": "ZQnJl6rQs50",
+      "title": "The Potter And The Mug 🤔 (fable)",
+      "channel": "Zack D. Films",
+      "categoryId": 19,
+      "categoryName": "Travel & Events",
+      "views": 4126020,
+      "publishedAt": "2026-11-25T15:30:01Z",
+      "url": "https://www.youtube.com/watch?v=ZQnJl6rQs50",
+      "tags": []
+    },
+    {
+      "id": "Wb8Tq_HD4E8",
+      "title": "Avengers: Doomsday | Final Trailer | In Theaters December 18",
+      "channel": "Marvel Entertainment",
+      "categoryId": 24,
+      "categoryName": "Entertainment",
+      "views": 54350784,
+      "publishedAt": "2026-11-23T14:00:01Z",
+      "url": "https://www.youtube.com/watch?v=Wb8Tq_HD4E8",
+      "tags": [
+        "marvel",
+        "comics"
+      ]
+    },
+    {
+      "id": "7o9Al07wa6M",
+      "title": "Bro 😭",
+      "channel": "Stewie",
+      "categoryId": 24,
+      "categoryName": "Entertainment",
+      "views": 20478503,
+      "publishedAt": "2026-11-24T01:30:01Z",
+      "url": "https://www.youtube.com/watch?v=7o9Al07wa6M",
+      "tags": []
+    },
+    {
+      "id": "uK_8IXmGhO0",
+      "title": "I couldn't even afford him a white T-shirt. He loved me anyway. #shorts",
+      "channel": "The Love Editorial Office",
+      "categoryId": 1,
+      "categoryName": "Film & Animation",
+      "views": 9673808,
+      "publishedAt": "2026-11-24T02:03:07Z",
+      "url": "https://www.youtube.com/watch?v=uK_8IXmGhO0",
+      "tags": [
+        "love",
+        "emotionalmovies",
+        "healing",
+        "movieclips",
+        "shorts",
+        "A Home of Our Own"
+      ]
+    },
+    {
+      "id": "W_cuX6leGak",
+      "title": "Well we know what time it is 😂 #funny",
+      "channel": "No Tatts",
+      "categoryId": 24,
+      "categoryName": "Entertainment",
+      "views": 25274765,
+      "publishedAt": "2026-11-24T17:00:30Z",
+      "url": "https://www.youtube.com/watch?v=W_cuX6leGak",
+      "tags": []
+    },
+    {
+      "id": "aCqDrqDTfoQ",
+      "title": "He is on Another Level.🔥#edit #shorts #foryou",
+      "channel": "JJ_EditZ",
+      "categoryId": 22,
+      "categoryName": "People & Blogs",
+      "views": 16809298,
+      "publishedAt": "2026-11-22T11:16:13Z",
+      "url": "https://www.youtube.com/watch?v=aCqDrqDTfoQ",
+      "tags": []
+    },
+    {
+      "id": "TXYkiIRMzH8",
+      "title": "Mom Surprised Him With GTA 6 😱",
+      "channel": "SpinFactz",
+      "categoryId": 20,
+      "categoryName": "Gaming",
+      "views": 69127180,
+      "publishedAt": "2026-11-22T13:00:23Z",
+      "url": "https://www.youtube.com/watch?v=TXYkiIRMzH8",
+      "tags": []
+    },
+    {
+      "id": "jU6cUtK_hGk",
+      "title": "Teaching my GF how to dive 🤣😭",
+      "channel": "Cadel and Mia",
+      "categoryId": 24,
+      "categoryName": "Entertainment",
+      "views": 76202561,
+      "publishedAt": "2026-11-25T09:45:19Z",
+      "url": "https://www.youtube.com/watch?v=jU6cUtK_hGk",
+      "tags": []
+    },
+    {
+      "id": "CV0mkRyaVtg",
+      "title": "The Most Dramatic Speech In The Office🎄😭",
+      "channel": "Tom Cuts",
+      "categoryId": 22,
+      "categoryName": "People & Blogs",
+      "views": 6237826,
+      "publishedAt": "2026-11-25T02:15:18Z",
+      "url": "https://www.youtube.com/watch?v=CV0mkRyaVtg",
+      "tags": []
+    },
+    {
+      "id": "1nSozFynnZ0",
+      "title": "Getting my girlfriend stolen",
+      "channel": "Archangel Riderr",
+      "categoryId": 22,
+      "categoryName": "People & Blogs",
+      "views": 303125,
+      "publishedAt": "2026-11-25T19:15:37Z",
+      "url": "https://www.youtube.com/watch?v=1nSozFynnZ0",
+      "tags": []
+    },
+    {
+      "id": "sP2RHlT9hUc",
+      "title": "I Bought Etsy Products With 0 Sales",
+      "channel": "Serena Neel",
+      "categoryId": 22,
+      "categoryName": "People & Blogs",
+      "views": 1891958,
+      "publishedAt": "2026-11-21T16:00:39Z",
+      "url": "https://www.youtube.com/watch?v=sP2RHlT9hUc",
+      "tags": []
+    },
+    {
+      "id": "EetbXDtNS0g",
+      "title": "this couple deserves a COZY bedroom sanctuary (and I actually made it happen)",
+      "channel": "TheSorryGirls",
+      "categoryId": 26,
+      "categoryName": "Howto & Style",
+      "views": 180533,
+      "publishedAt": "2026-11-24T20:00:16Z",
+      "url": "https://www.youtube.com/watch?v=EetbXDtNS0g",
+      "tags": [
+        "diy",
+        "the",
+        "sorry",
+        "girls",
+        "thesorrygirls",
+        "home decor",
+        "interior design",
+        "makeover",
+        "do it yourself",
+        "home design"
+      ]
+    },
+    {
+      "id": "prqQqjwcH-8",
+      "title": "I thought i found her",
+      "channel": "ThoughTaken",
+      "categoryId": 2,
+      "categoryName": "Autos & Vehicles",
+      "views": 1911123,
+      "publishedAt": "2026-11-19T21:02:20Z",
+      "url": "https://www.youtube.com/watch?v=prqQqjwcH-8",
+      "tags": []
+    },
+    {
+      "id": "8_ex8qOVfN4",
+      "title": "Revealing Our New Caregiver!",
+      "channel": "Squirmy and Grubs",
+      "categoryId": 22,
+      "categoryName": "People & Blogs",
+      "views": 106184,
+      "publishedAt": "2026-11-25T22:04:56Z",
+      "url": "https://www.youtube.com/watch?v=8_ex8qOVfN4",
+      "tags": [
+        "Squirmy and Grubs",
+        "Shane Burcaw",
+        "Hannah Aylward",
+        "relationship goals",
+        "couple goals",
+        "dating advice",
+        "dating tips",
+        "relationship vlog",
+        "interabled relationship",
+        "shane and hannah"
+      ]
+    },
+    {
+      "id": "zdz8swOQUqw",
+      "title": "Shubh - Never Left (Official Music Video)",
+      "channel": "SHUBH",
+      "categoryId": 10,
+      "categoryName": "Music",
+      "views": 15400453,
+      "publishedAt": "2026-11-13T05:00:22Z",
+      "url": "https://www.youtube.com/watch?v=zdz8swOQUqw",
+      "tags": [
+        "Never Left",
+        "Never Left Shubh",
+        "Shubh Never Left",
+        "Never Left lyrics",
+        "Shubh new song 2026",
+        "Kehnde c school ch bapu nu leke aa",
+        "Hun kehnde bapu nu putt nu leke aao",
+        "bapu nu leke aa shubh",
+        "Ethe hi aa beeba mai ta gya hi ni",
+        "loki kehnde comeback ho gya"
+      ]
+    },
+    {
+      "id": "LJC7mgjp5FQ",
+      "title": "Taylor Swift - I Knew It, I Knew You x Our Song (Live From The 60th CMA Awards)",
+      "channel": "Taylor Swift",
+      "categoryId": 10,
+      "categoryName": "Music",
+      "views": 7001043,
+      "publishedAt": "2026-11-19T11:00:19Z",
+      "url": "https://www.youtube.com/watch?v=LJC7mgjp5FQ",
+      "tags": [
+        "Taylor swift",
+        "taylor",
+        "swift",
+        "taylor swift live",
+        "taylor swift cmas",
+        "cmas taylor",
+        "taylor swift i knew it i knew your",
+        "taylor swift our song",
+        "i knew it i knew you live cmas"
+      ]
+    },
+    {
+      "id": "tz8nh-16JWg",
+      "title": "KUNDHIYAN (official video) | RANJIT BAWA | KAPTAAN | BLACK VIRUS | NAVJIT BUTTAR | NEW PUNJABI SONGS",
+      "channel": "Ranjit Bawa Music",
+      "categoryId": 10,
+      "categoryName": "Music",
+      "views": 10275625,
+      "publishedAt": "2026-11-20T05:04:50Z",
+      "url": "https://www.youtube.com/watch?v=tz8nh-16JWg",
+      "tags": [
+        "ranjit bawa",
+        "ranjit bawa songs",
+        "ranjit bawa all songs",
+        "new song ranjit bawa",
+        "ranjit bawa new songs",
+        "ranjit bawa live show",
+        "latest song ranjit bawa",
+        "ranjit bawa video song",
+        "ranjit",
+        "bawa"
+      ]
+    },
+    {
+      "id": "FTQVONPGlus",
+      "title": "Burn This Shit Down (from GTAVI: The Album)",
+      "channel": "Travis Scott - Topic",
+      "categoryId": 10,
+      "categoryName": "Music",
+      "views": 1495950,
+      "publishedAt": "2026-11-23T14:04:28Z",
+      "url": "https://www.youtube.com/watch?v=FTQVONPGlus",
+      "tags": [
+        "Travis Scott",
+        "Grand Theft Auto VI",
+        "Burn This Shit Down (from GTAVI: The Album)"
+      ]
+    },
+    {
+      "id": "hX9S94XsySk",
+      "title": "The Weeknd - Hong Kong (feat. 王菲季候風) (Official Music Video)",
+      "channel": "The Weeknd",
+      "categoryId": 10,
+      "categoryName": "Music",
+      "views": 28256467,
+      "publishedAt": "2026-11-12T16:00:33Z",
+      "url": "https://www.youtube.com/watch?v=hX9S94XsySk",
+      "tags": [
+        "the weeknd",
+        "faye wong",
+        "hong kong",
+        "after hours til dawn tour",
+        "the weeknd asia",
+        "official music video",
+        "the weeknd new video",
+        "the weeknd hong kong",
+        "the weeknd new song"
+      ]
+    },
+    {
+      "id": "WAncuIORqxA",
+      "title": "Disturbing the WORM 🪱",
+      "channel": "NHL",
+      "categoryId": 17,
+      "categoryName": "Sports",
+      "views": 1128551,
+      "publishedAt": "2026-11-24T03:15:07Z",
+      "url": "https://www.youtube.com/watch?v=WAncuIORqxA",
+      "tags": [
+        "NHL",
+        "NHL Scores",
+        "hockey scores hockey",
+        "nhl highlights",
+        "NHL video",
+        "national hockey league",
+        "Highlights",
+        "nhl hockey games 2026",
+        "ice hockey",
+        "corey perry funny moments"
+      ]
+    },
+    {
+      "id": "rWhXk94GwU0",
+      "title": "Steph Curry didn't let that happen 👏❤️",
+      "channel": "GD's Highlights",
+      "categoryId": 17,
+      "categoryName": "Sports",
+      "views": 9647613,
+      "publishedAt": "2026-11-24T16:01:17Z",
+      "url": "https://www.youtube.com/watch?v=rWhXk94GwU0",
+      "tags": [
+        "stephen curry",
+        "steph curry",
+        "stephen curry highlights",
+        "steph curry fan",
+        "steph curry fan interaction",
+        "stephen curry shoes",
+        "kobe bryant",
+        "kobe",
+        "kobe and fans",
+        "nba fans"
+      ]
+    },
+    {
+      "id": "hScVhS3BOes",
+      "title": "The Smartest Trick In Hockey ft. Underwhelming Podcast",
+      "channel": "Underground Bullets",
+      "categoryId": 22,
+      "categoryName": "People & Blogs",
+      "views": 2624614,
+      "publishedAt": "2026-11-21T17:12:45Z",
+      "url": "https://www.youtube.com/watch?v=hScVhS3BOes",
+      "tags": []
+    },
+    {
+      "id": "Z1mHknI0kP8",
+      "title": "Auston Matthews catches the anthem mistake 😭😭 #leafs #nhl #hockey",
+      "channel": "Gino Hard",
+      "categoryId": 17,
+      "categoryName": "Sports",
+      "views": 524376,
+      "publishedAt": "2026-11-24T02:33:07Z",
+      "url": "https://www.youtube.com/watch?v=Z1mHknI0kP8",
+      "tags": []
+    },
+    {
+      "id": "wJ-A54rpHr0",
+      "title": "Yamal & Olise Laughed Too Early... Haaland’s Surprise 🍓😂",
+      "channel": "GOATZVERSE",
+      "categoryId": 24,
+      "categoryName": "Entertainment",
+      "views": 64212294,
+      "publishedAt": "2026-11-25T11:48:04Z",
+      "url": "https://www.youtube.com/watch?v=wJ-A54rpHr0",
+      "tags": [
+        "Lamine Yamal",
+        "Erling Haaland",
+        "Michael Olise",
+        "Fc Barcelona",
+        "Fc Munich Bayern",
+        "ManCity",
+        "football funny games",
+        "football entertaining shorts",
+        "football players funny parody"
+      ]
+    },
+    {
+      "id": "I4OnpwkzYF4",
+      "title": "Bird Fall",
+      "channel": "Thomas Mulligan",
+      "categoryId": 28,
+      "categoryName": "Science & Technology",
+      "views": 7759939,
+      "publishedAt": "2026-11-23T21:30:17Z",
+      "url": "https://www.youtube.com/watch?v=I4OnpwkzYF4",
+      "tags": []
+    },
+    {
+      "id": "4hZCdH0aDVA",
+      "title": "awwwwwwwh so adorable #cute #puppy #dogvideos",
+      "channel": "Dogosolo worldz",
+      "categoryId": 22,
+      "categoryName": "People & Blogs",
+      "views": 20789301,
+      "publishedAt": "2026-11-22T00:28:12Z",
+      "url": "https://www.youtube.com/watch?v=4hZCdH0aDVA",
+      "tags": []
+    },
+    {
+      "id": "pUKiRbwUczU",
+      "title": "Comment “DRY” if you need one! 😱☔️🏅",
+      "channel": "SidelineDry",
+      "categoryId": 22,
+      "categoryName": "People & Blogs",
+      "views": 169299172,
+      "publishedAt": "2026-11-16T05:10:53Z",
+      "url": "https://www.youtube.com/watch?v=pUKiRbwUczU",
+      "tags": []
+    },
+    {
+      "id": "fhB5a9iUpQY",
+      "title": "Researchers Discovered Crows Can Count 😮",
+      "channel": "Zack D. Films",
+      "categoryId": 19,
+      "categoryName": "Travel & Events",
+      "views": 7217303,
+      "publishedAt": "2026-11-24T20:30:20Z",
+      "url": "https://www.youtube.com/watch?v=fhB5a9iUpQY",
+      "tags": []
+    },
+    {
+      "id": "iX1bxE0Mel4",
+      "title": "Why the U.S. Army is about to blow up 5 tons of lead explosives in Iowa | About That",
+      "channel": "CBC News",
+      "categoryId": 25,
+      "categoryName": "News & Politics",
+      "views": 357213,
+      "publishedAt": "2026-11-24T23:03:28Z",
+      "url": "https://www.youtube.com/watch?v=iX1bxE0Mel4",
+      "tags": [
+        "US Army",
+        "Iowa",
+        "Detonation",
+        "military base",
+        "United States",
+        "Lead azide",
+        "Andrew Chang",
+        "About That",
+        "CBC News",
+        "cbc"
+      ]
+    },
+    {
+      "id": "iv2W9WnEuXo",
+      "title": "Newsom FIRES BACK at Trump speech targeting him — says Trump 'sells' mercy to criminals",
+      "channel": "MS NOW",
+      "categoryId": 25,
+      "categoryName": "News & Politics",
+      "views": 1279494,
+      "publishedAt": "2026-11-24T01:38:02Z",
+      "url": "https://www.youtube.com/watch?v=iv2W9WnEuXo",
+      "tags": [
+        "Politics",
+        "News",
+        "MS NOW",
+        "msnow",
+        "msnbc"
+      ]
+    },
+    {
+      "id": "7fZDoKy1wBg",
+      "title": "Is shopping at Dollarama really saving you money?",
+      "channel": "CTV News",
+      "categoryId": 25,
+      "categoryName": "News & Politics",
+      "views": 559827,
+      "publishedAt": "2026-11-17T17:14:58Z",
+      "url": "https://www.youtube.com/watch?v=7fZDoKy1wBg",
+      "tags": [
+        "Ottawa",
+        "CTV Ottawa",
+        "CTV News Ottawa",
+        "Dollarama",
+        "Loblaws"
+      ]
+    },
+    {
+      "id": "_wN_Cw2V8SU",
+      "title": "Jon Stewart on Unregulated AI & Michael Kosta on Tech Outages and Trump's APEC Nap | The Daily Show",
+      "channel": "The Daily Show",
+      "categoryId": 23,
+      "categoryName": "Comedy",
+      "views": 2408449,
+      "publishedAt": "2026-11-21T14:00:38Z",
+      "url": "https://www.youtube.com/watch?v=_wN_Cw2V8SU",
+      "tags": [
+        "the daily show",
+        "the daily show episodes",
+        "comedy central",
+        "comedians",
+        "comedian",
+        "funny video",
+        "comedy videos",
+        "funny clips",
+        "daily show",
+        "news"
+      ]
+    },
+    {
+      "id": "w1b0jcYJzcI",
+      "title": "Russia, Trump And A 'Friendship' That Shocked America: Senator Whitehouse STUNS Congress | N18G",
+      "channel": "CNN-News18",
+      "categoryId": 25,
+      "categoryName": "News & Politics",
+      "views": 1335966,
+      "publishedAt": "2026-11-23T21:30:08Z",
+      "url": "https://www.youtube.com/watch?v=w1b0jcYJzcI",
+      "tags": [
+        "news18",
+        "cnn news18",
+        "latest news",
+        "sheldon whitehouse",
+        "sheldon whitehouse trump",
+        "sheldon whitehouse epstein",
+        "sheldon whitehouse russia",
+        "trump russia epstein",
+        "sen sheldon whitehouse",
+        "sheldon whitehouse senate floor speech"
+      ]
+    }
+  ]
+}
