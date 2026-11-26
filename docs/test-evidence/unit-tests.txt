@@ -1,0 +1,154 @@
+
+ RUN  v5.1.2 <repo>
+
+ ✓ lib/youtube/fetch.test.ts > stripMentions > removes @handles, including non-English ones 8ms
+ ✓ lib/youtube/fetch.test.ts > mapVideo > keeps only the fields TrendPilot needs 8ms
+ ✓ lib/youtube/fetch.test.ts > mapVideo > caps tags at 10 and drops tags that are only a mention 3ms
+ ✓ lib/youtube/fetch.test.ts > mapVideo > returns null for a video with an empty title 1ms
+ ✓ lib/youtube/fetch.test.ts > fetchMostPopular > calls videos.list chart=mostPopular for the category and region 14ms
+ ✓ lib/youtube/fetch.test.ts > fetchMostPopular > returns an empty list when YouTube has no items 7ms
+ ✓ lib/youtube/fetch.test.ts > fetchMostPopular > throws YouTubeApiError with the status and Google's message, never the key 50ms
+ ✓ lib/youtube/fetch.test.ts > fetchMostPopular > reports a timeout without leaking the key 2ms
+ ✓ lib/youtube/fetch.test.ts > fetchMostPopular > rejects a response with an unexpected shape 5ms
+ ✓ lib/youtube/fetch.test.ts > fetchTrending > keeps results from working categories when one fails, and dedupes 12ms
+ ✓ components/site-nav.test.tsx > SiteNav > links to every main page 469ms
+ ✓ lib/safety/layers.test.ts > layer 1: category allowlist > allows category 26 4ms
+ ✓ lib/safety/layers.test.ts > layer 1: category allowlist > allows category 24 1ms
+ ✓ lib/safety/layers.test.ts > layer 1: category allowlist > allows category 23 1ms
+ ✓ lib/safety/layers.test.ts > layer 1: category allowlist > allows category 22 1ms
+ ✓ lib/safety/layers.test.ts > layer 1: category allowlist > allows category 10 1ms
+ ✓ lib/safety/layers.test.ts > layer 1: category allowlist > allows category 17 1ms
+ ✓ lib/safety/layers.test.ts > layer 1: category allowlist > allows category 15 1ms
+ ✓ lib/safety/layers.test.ts > layer 1: category allowlist > never allows News & Politics (25) or Nonprofits & Activism (29) 1ms
+ ✓ lib/safety/layers.test.ts > layer 1: category allowlist > rejects categories that aren't on the list, like Gaming (20) 1ms
+ ✓ lib/safety/layers.test.ts > layer 2: keyword blocklist > includes the terms CLAUDE.md requires 3ms
+ ✓ lib/safety/layers.test.ts > layer 2: keyword blocklist > blocks "War breaks out" 32ms
+ ✓ lib/safety/layers.test.ts > layer 2: keyword blocklist > blocks "Top 10 WARS in history" 1ms
+ ✓ lib/safety/layers.test.ts > layer 2: keyword blocklist > blocks "Celebrity ARRESTED at airport" 72ms
+ ✓ lib/safety/layers.test.ts > layer 2: keyword blocklist > blocks "Highway crashes cause delays" 1ms
+ ✓ lib/safety/layers.test.ts > layer 2: keyword blocklist > blocks "The election results are in" 2ms
+ ✓ lib/safety/layers.test.ts > layer 2: keyword blocklist > blocks "Burn This Shit Down" 14ms
+ ✓ lib/safety/layers.test.ts > layer 2: keyword blocklist > does not block the harmless title "Bakery wins award for best croissant" 5ms
+ ✓ lib/safety/layers.test.ts > layer 2: keyword blocklist > does not block the harmless title "Warm cinnamon buns on a cold morning" 1ms
+ ✓ lib/safety/layers.test.ts > layer 2: keyword blocklist > does not block the harmless title "Golden State Warriors highlights" 6ms
+ ✓ lib/safety/layers.test.ts > layer 2: keyword blocklist > does not block the harmless title "Diet Coke vs Coke taste test" 1ms
+ ✓ lib/safety/layers.test.ts > layer 2: keyword blocklist > errs on the side of caution: a harmless use of a blocked word is still blocked 1ms
+ ✓ lib/safety/layers.test.ts > layer 2: keyword blocklist > checks tags as well as the title 2ms
+ ✓ lib/safety/layers.test.ts > layer 2: keyword blocklist > matches multi-word terms across spaces or hyphens 1ms
+ ✓ lib/safety/layers.test.ts > layer 3: profile topics to avoid > turns free-text topics into keywords 5ms
+ ✓ lib/safety/layers.test.ts > layer 3: profile topics to avoid > keeps multi-word phrases and remembers the original topic 2ms
+ ✓ lib/safety/layers.test.ts > layer 3: profile topics to avoid > rejects a trend matching the demo bakery's topics to avoid, naming the topic 13ms
+ ✓ lib/safety/layers.test.ts > layer 3: profile topics to avoid > uses whatever topics the owner entered 2ms
+ ✓ lib/safety/layers.test.ts > keywordRejection order > reports the first failing layer: category before keywords 1ms
+ ✓ lib/safety/layers.test.ts > keywordRejection order > passes a clearly harmless trend through to the LLM layer 4ms
+ ✓ lib/youtube/snapshot.test.ts > saved snapshot (data/youtube-snapshot.json) > is valid and non-empty 16ms
+ ✓ lib/youtube/snapshot.test.ts > saved snapshot (data/youtube-snapshot.json) > links every trend to its source video 2ms
+ ✓ lib/youtube/snapshot.test.ts > saved snapshot (data/youtube-snapshot.json) > has unique video IDs 1ms
+ ✓ lib/youtube/snapshot.test.ts > saved snapshot (data/youtube-snapshot.json) > contains no @mentions of other people 4ms
+ ✓ lib/youtube/snapshot.test.ts > parseSnapshot > accepts a valid snapshot 2ms
+ ✓ lib/youtube/snapshot.test.ts > parseSnapshot > defaults missing tags to an empty array 3ms
+ ✓ lib/youtube/snapshot.test.ts > parseSnapshot > rejects null 3ms
+ ✓ lib/youtube/snapshot.test.ts > parseSnapshot > rejects a string 1ms
+ ✓ lib/youtube/snapshot.test.ts > parseSnapshot > rejects an array 1ms
+ ✓ lib/youtube/snapshot.test.ts > parseSnapshot > rejects a snapshot with no items 2ms
+ ✓ lib/youtube/snapshot.test.ts > parseSnapshot > rejects an unknown source 2ms
+ ✓ lib/youtube/snapshot.test.ts > parseSnapshot > rejects an item with missing title and names the field 2ms
+ ✓ lib/youtube/snapshot.test.ts > parseSnapshot > rejects an item with empty title and names the field 1ms
+ ✓ lib/youtube/snapshot.test.ts > parseSnapshot > rejects an item with negative views and names the field 1ms
+ ✓ lib/youtube/snapshot.test.ts > parseSnapshot > rejects an item with fractional views and names the field 1ms
+ ✓ lib/youtube/snapshot.test.ts > parseSnapshot > rejects an item with views as a string and names the field 1ms
+ ✓ lib/youtube/snapshot.test.ts > parseSnapshot > rejects an item with bad date and names the field 1ms
+ ✓ lib/youtube/snapshot.test.ts > parseSnapshot > rejects an item with non-YouTube url and names the field 2ms
+ ✓ lib/youtube/snapshot.test.ts > parseSnapshot > rejects an item with http url and names the field 3ms
+ ✓ lib/youtube/snapshot.test.ts > parseSnapshot > rejects an item with tags not an array and names the field 2ms
+ ✓ lib/safety/filter.test.ts > filterTrends > returns kept and filtered-out trends with the layer and reason 126ms
+ ✓ lib/safety/llm-check.test.ts > prompt construction (prompt-injection defence) > puts untrusted text only inside one <trend_data> block 6ms
+ ✓ lib/safety/llm-check.test.ts > prompt construction (prompt-injection defence) > neutralises a fake closing tag so the title can't break out of the block 1ms
+ ✓ lib/safety/llm-check.test.ts > prompt construction (prompt-injection defence) > never puts trend text in the system prompt, which tells the model to treat it as data 1ms
+ ✓ lib/safety/llm-check.test.ts > prompt construction (prompt-injection defence) > sends the injection title to the LLM as data and obeys the verdict, not the title 113ms
+ ✓ lib/safety/llm-check.test.ts > layer 4: LLM safety check > keeps a trend the LLM marks safe, with its reason 6ms
+ ✓ lib/safety/llm-check.test.ts > layer 4: LLM safety check > marks unsafe when the LLM call fails (unsure = unsafe) 3ms
+ ✓ lib/safety/llm-check.test.ts > layer 4: LLM safety check > marks unsafe when there is no cached verdict and no live LLM 1ms
+ ✓ lib/safety/llm-check.test.ts > layer 4: LLM safety check > uses a cached verdict without calling the LLM 2ms
+ ✓ lib/safety/llm-check.test.ts > layer 4: LLM safety check > ignores cached verdicts from an older prompt version 2ms
+ ✓ lib/safety/llm-check.test.ts > layer 4: LLM safety check > changes the cache key when the title changes, so an edited title is re-checked 3ms
+ ✓ lib/safety/llm-check.test.ts > layer 4: LLM safety check > asks the LLM only once per trend 1ms
+ ✓ lib/safety/filter.test.ts > filterTrends > filters out trends the LLM marks unsafe 4ms
+ ✓ lib/safety/filter.test.ts > filterTrends > limits how many LLM checks run at once 71ms
+ ✓ lib/safety/filter.test.ts > the saved snapshot through layers 1-3 > accounts for every trend and removes all News & Politics 222ms
+ ✓ lib/generate/concepts.test.ts > concept schema > accepts 3 well-formed concepts 6ms
+ ✓ lib/generate/concepts.test.ts > concept schema > rejects fewer than 3 concepts 1ms
+ ✓ lib/generate/concepts.test.ts > concept schema > rejects a hashtag without # 1ms
+ ✓ lib/generate/concepts.test.ts > concept schema > rejects too few hashtags 1ms
+ ✓ lib/generate/concepts.test.ts > concept schema > rejects a missing caption 1ms
+ ✓ lib/generate/concepts.test.ts > concept schema > rejects not JSON-shaped at all 0ms
+ ✓ lib/generate/concepts.test.ts > prompts > puts the trend in <trend_data> and the profile in <brand_profile>, not in the system prompt 2ms
+ ✓ lib/generate/concepts.test.ts > prompts > states the originality rules 1ms
+ ✓ lib/generate/concepts.test.ts > prompts > neutralises tags in the profile too 2ms
+ ✓ lib/generate/concepts.test.ts > originality check > flags a concept that copies the video title 3ms
+ ✓ lib/generate/concepts.test.ts > originality check > flags a concept that names the channel 1ms
+ ✓ lib/generate/concepts.test.ts > originality check > passes original concepts 0ms
+ ✓ lib/generate/concepts.test.ts > generateConcepts > returns 3 concepts from the LLM 21ms
+ ✓ lib/generate/concepts.test.ts > generateConcepts > keeps only the first 3 if the LLM returns more 1ms
+ ✓ lib/generate/concepts.test.ts > generateConcepts > retries once after invalid JSON, then succeeds 2ms
+ ✓ lib/generate/concepts.test.ts > generateConcepts > retries once if the first answer copies the title 4ms
+ ✓ lib/generate/concepts.test.ts > generateConcepts > gives up after a second invalid answer, with a friendly message 3ms
+ ✓ lib/generate/concepts.test.ts > generateConcepts > does not retry a timeout again (the SDK already retried it) and explains it kindly 2ms
+ ✓ lib/generate/concepts.test.ts > generateConcepts > uses cached concepts without calling the LLM 2ms
+ ✓ lib/generate/concepts.test.ts > generateConcepts > misses the cache when the profile changes 1ms
+ ✓ lib/generate/concepts.test.ts > generateConcepts > throws a config error when there is no cache entry and no LLM 3ms
+ ✓ lib/client/client.test.ts > dates > starts weeks on Monday 3ms
+ ✓ lib/client/client.test.ts > dates > suggests the next matching day for "Saturday 8:00-10:00 AM" 1ms
+ ✓ lib/client/client.test.ts > dates > suggests the next matching day for "Tuesday 7:00-9:00 AM" 1ms
+ ✓ lib/client/client.test.ts > dates > suggests the next matching day for "Wednesday lunch" 1ms
+ ✓ lib/client/client.test.ts > dates > suggests the next matching day for "Fri 3-5 PM" 1ms
+ ✓ lib/client/client.test.ts > dates > suggests the next matching day for "Weekday mornings" 1ms
+ ✓ lib/client/client.test.ts > dates > adds days across month ends 1ms
+ ✓ lib/client/client.test.ts > dates > formats elapsed time for speed-to-market 1ms
+ ✓ lib/client/client.test.ts > normaliseHashtags > adds missing # and strips punctuation 3ms
+ ✓ lib/client/client.test.ts > normaliseHashtags > drops empty tags 1ms
+ ✓ lib/client/client.test.ts > createLocalStore > returns the fallback when nothing is saved 2ms
+ ✓ lib/client/client.test.ts > createLocalStore > saves, reads back the same object, and notifies listeners 4ms
+ ✓ lib/client/client.test.ts > createLocalStore > ignores corrupt or invalid saved data 1ms
+ ✓ lib/client/client.test.ts > createLocalStore > writing null clears the saved value 1ms
+ ✓ lib/client/client.test.ts > CalendarEntrySchema > requires a YYYY-MM-DD date 5ms
+ ✓ lib/client/metrics.test.ts > parseCount > parses "" as undefined 3ms
+ ✓ lib/client/metrics.test.ts > parseCount > parses "  " as undefined 1ms
+ ✓ lib/client/metrics.test.ts > parseCount > parses "42" as 42 0ms
+ ✓ lib/client/metrics.test.ts > parseCount > parses "1,250" as 1250 1ms
+ ✓ lib/client/metrics.test.ts > parseCount > parses "3.6" as 4 0ms
+ ✓ lib/client/metrics.test.ts > parseCount > parses "-5" as undefined 0ms
+ ✓ lib/client/metrics.test.ts > parseCount > parses "abc" as undefined 0ms
+ ✓ lib/client/metrics.test.ts > speedHours > is null until the post is marked posted 1ms
+ ✓ lib/client/metrics.test.ts > speedHours > measures hours from trend capture to posting 1ms
+ ✓ lib/client/metrics.test.ts > computeTotals > counts planned vs posted and averages speed over posted posts only 3ms
+ ✓ lib/client/metrics.test.ts > computeTotals > sums owner-entered values and computes engagement rate from posts with both numbers 1ms
+ ✓ lib/client/metrics.test.ts > computeTotals > handles no posts and no values 1ms
+ ✓ lib/client/metrics.test.ts > computeTotals > ignores values for posts that were deleted from the calendar 0ms
+ ✓ lib/client/metrics.test.ts > formatHours > picks a readable unit 1ms
+ ✓ lib/client/metrics.test.ts > MetricsStateSchema > rejects negative or fractional saved values 6ms
+ ✓ lib/generate/fit.test.ts > fit score schema > rejects a score above 100 4ms
+ ✓ lib/generate/fit.test.ts > fit score schema > rejects a negative score 1ms
+ ✓ lib/generate/fit.test.ts > fit score schema > rejects a fractional score 0ms
+ ✓ lib/generate/fit.test.ts > fit score schema > rejects a missing reason 0ms
+ ✓ lib/generate/fit.test.ts > scoreTrends > scores every trend in one call, with each trend in its own <trend_data> block 14ms
+ ✓ lib/generate/fit.test.ts > scoreTrends > ignores scores for trend IDs it didn't ask about 1ms
+ ✓ lib/generate/fit.test.ts > scoreTrends > returns no scores and a friendly error when the LLM times out 1ms
+ ✓ lib/generate/fit.test.ts > scoreTrends > returns no scores and a friendly error on invalid JSON 1ms
+ ✓ lib/generate/fit.test.ts > scoreTrends > uses cached scores for the same profile and trends 1ms
+ ✓ lib/generate/fit.test.ts > scoreTrends > skips the LLM for an empty list 1ms
+ ✓ app/api/generate/route.test.ts > POST /api/generate > returns concepts for a safe trend 9ms
+ ✓ app/api/generate/route.test.ts > POST /api/generate > rejects a malformed body with 400 4ms
+ ✓ app/api/generate/route.test.ts > POST /api/generate > returns 404 for a trend that isn't on the safe list 2ms
+ ✓ app/api/generate/route.test.ts > POST /api/generate > maps an LLM timeout to 504 with a friendly message 2ms
+ ✓ app/api/generate/route.test.ts > POST /api/generate > maps an LLM invalid_output to 502 with a friendly message 1ms
+ ✓ app/api/generate/route.test.ts > POST /api/generate > maps an LLM rate_limit to 429 with a friendly message 1ms
+ ✓ app/api/generate/route.test.ts > POST /api/generate > maps an LLM config to 503 with a friendly message 1ms
+ ✓ app/api/generate/route.test.ts > POST /api/generate > hides unexpected errors behind a generic message 1ms
+
+ Test Files  11 passed (11)
+      Tests  144 passed (144)
+   Start at  21:00:14
+   Duration  13.75s (environment 57%, setup 20%, import 19%, tests 2%, transform 1%)
+
+

@@ -1,0 +1,13 @@
+
+Running 8 tests using 4 workers
+
+  ok 4 [chromium] › e2e\metrics.spec.ts:82:1 › metrics: empty state links to the dashboard (1.9s)
+  ok 1 [chromium] › e2e\metrics.spec.ts:46:1 › metrics: totals, owner-entered values, toggles, saved across reloads (2.6s)
+  ok 5 [chromium] › e2e\metrics.spec.ts:88:1 › nav highlights the current page (1.2s)
+  ok 3 [chromium] › e2e\main-flow.spec.ts:66:1 › a filtered-out trend can't be used for posts (3.3s)
+  ok 6 [chromium] › e2e\metrics.spec.ts:96:1 › unknown pages show a friendly 404 (987ms)
+  ok 8 [chromium] › e2e\navigation.spec.ts:22:1 › an unknown trend shows a friendly message (1.1s)
+  ok 2 [chromium] › e2e\main-flow.spec.ts:8:1 › profile -> trend -> generate -> save -> calendar (4.6s)
+  ok 7 [chromium] › e2e\navigation.spec.ts:3:1 › shared nav reaches every page (1.6s)
+
+  8 passed (28.1s)

@@ -12,7 +12,8 @@
     "test:e2e": "playwright test",
     "fetch:youtube": "tsx scripts/fetch-youtube.ts",
     "cache:safety": "tsx scripts/build-safety-cache.ts",
-    "cache:generate": "tsx scripts/build-generate-cache.ts"
+    "cache:generate": "tsx scripts/build-generate-cache.ts",
+    "screenshots": "playwright test --config playwright.screenshots.config.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^1.14.0",
