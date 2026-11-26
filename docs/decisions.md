@@ -18,3 +18,7 @@ Scope and design decisions, newest last.
 ## 2026-11-25 — Demo mode by default
 - **Decision:** `DEMO_MODE=true` runs entirely from the saved snapshot and cached LLM results.
 - **Why:** The live presentation must not depend on YouTube being reachable.
+
+## 2026-11-25 — LLM model: Claude Sonnet 5.5
+- **Decision:** `ANTHROPIC_MODEL=claude-sonnet-5-5` (was `claude-sonnet-4-5` in the original setup).
+- **Why:** Current Sonnet model; set via env so it can be changed without code edits.
