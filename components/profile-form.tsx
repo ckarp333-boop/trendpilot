@@ -2,8 +2,18 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import {
+  Building2,
+  Croissant,
+  type LucideIcon,
+  MessageCircleHeart,
+  RotateCcw,
+  Save,
+  ShieldAlert,
+  Store,
+} from "lucide-react";
+import { PageHeader } from "@/components/page-header";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
@@ -102,7 +112,7 @@ function ProfileEditor() {
   }
 
   const textField = (k: keyof BrandProfile, multiline = false, rows = 3) => (
-    <div className="space-y-1" key={k}>
+    <div className="space-y-1.5" key={k}>
       <Label htmlFor={`profile-${k}`}>{LABELS[k].label}</Label>
       {multiline ? (
         <Textarea id={`profile-${k}`} rows={rows} value={draft[k]} onChange={(e) => set(k)(e.target.value)} />
@@ -113,57 +123,102 @@ function ProfileEditor() {
     </div>
   );
 
-  return (
-    <section className="space-y-6">
-      <div className="space-y-1">
-        <h1 className="text-2xl font-semibold">Brand profile</h1>
-        <p className="text-muted-foreground">
-          {isCustom
-            ? "You're using your own edited profile. It's saved in this browser only."
-            : "You're using the Rise & Grind Bakery demo profile (a fictional business). Edit anything to make it yours."}
-        </p>
-      </div>
+  const section = (icon: LucideIcon, title: string, description: string, body: React.ReactNode) => {
+    const Icon = icon;
+    return (
+      <section className="grid gap-5 rounded-2xl border bg-card p-5 shadow-xs sm:p-6 lg:grid-cols-[14rem_1fr]">
+        <div className="space-y-1.5">
+          <span className="grid size-9 place-items-center rounded-xl bg-brand-soft text-primary">
+            <Icon aria-hidden className="size-4.5" />
+          </span>
+          <h2 className="font-semibold">{title}</h2>
+          <p className="text-sm text-muted-foreground">{description}</p>
+        </div>
+        <div className="grid gap-4 sm:grid-cols-2">{body}</div>
+      </section>
+    );
+  };
 
-      <form onSubmit={onSave} className="space-y-6">
-        <Card className="py-4">
-          <CardContent className="grid gap-4 sm:grid-cols-3">
+  return (
+    <section className="space-y-8">
+      <PageHeader
+        eyebrow={isCustom ? "Your profile" : "Demo profile"}
+        icon={Store}
+        title="Brand profile"
+        description={
+          isCustom
+            ? "You're using your own edited profile. It's saved in this browser only."
+            : "You're using the Rise & Grind Bakery demo profile (a fictional business). Edit anything to make it yours."
+        }
+      />
+
+      <form onSubmit={onSave} className="space-y-4">
+        {section(
+          Building2,
+          "The business",
+          "Who you are and where.",
+          <>
             {textField("businessName")}
             {textField("businessType")}
-            {textField("location")}
-          </CardContent>
-        </Card>
-        <Card className="py-4">
-          <CardContent className="grid gap-4 sm:grid-cols-2">
+            <div className="sm:col-span-2">{textField("location")}</div>
+          </>,
+        )}
+        {section(
+          Croissant,
+          "What you offer",
+          "Products and values the AI should build posts around.",
+          <>
             {textField("products", true, 6)}
             {textField("values", true, 6)}
+          </>,
+        )}
+        {section(
+          MessageCircleHeart,
+          "Voice and audience",
+          "How you sound and who you're talking to.",
+          <>
+            {textField("tone", true, 4)}
             {textField("audience", true, 4)}
-            {textField("topicsToAvoid", true, 4)}
-            {textField("tone", true, 3)}
+          </>,
+        )}
+        {section(
+          ShieldAlert,
+          "Safety and posting",
+          "Topics to keep away from, and where and when you post.",
+          <>
+            {textField("topicsToAvoid", true, 6)}
             <div className="space-y-4">
               {textField("postingPlatforms", true, 3)}
               {textField("openingHours")}
             </div>
-          </CardContent>
-        </Card>
+          </>,
+        )}
 
-        <p className="text-sm text-muted-foreground">
-          Changing the profile means trends get re-scored and new post ideas are written by AI, which can take up
-          to 30 seconds. The demo profile uses saved results.
-        </p>
-
-        <div className="flex flex-wrap items-center gap-3">
-          <Button type="submit">Save profile</Button>
-          <Button type="button" variant="outline" onClick={onReset}>
+        <div className="sticky bottom-4 z-10 flex flex-wrap items-center gap-3 rounded-2xl border bg-card/90 p-4 shadow-lg backdrop-blur">
+          <Button type="submit" size="lg">
+            <Save aria-hidden className="size-4" />
+            Save profile
+          </Button>
+          <Button type="button" size="lg" variant="outline" onClick={onReset}>
+            <RotateCcw aria-hidden className="size-4" />
             Reset to demo profile
           </Button>
-          {status && (
-            <p role={status.kind === "error" ? "alert" : "status"} className={status.kind === "error" ? "text-sm text-destructive" : "text-sm"}>
+          {status ? (
+            <p
+              role={status.kind === "error" ? "alert" : "status"}
+              className={status.kind === "error" ? "text-sm text-destructive" : "text-sm text-success"}
+            >
               {status.text}{" "}
               {status.kind === "ok" && (
-                <Link href="/" className="underline underline-offset-2">
+                <Link href="/" className="font-medium text-foreground underline underline-offset-2">
                   See trends
                 </Link>
               )}
+            </p>
+          ) : (
+            <p className="text-xs text-muted-foreground sm:ml-auto sm:max-w-sm sm:text-right">
+              Editing the profile means fresh AI scores and ideas (up to 30 seconds). The demo profile uses saved
+              results.
             </p>
           )}
         </div>

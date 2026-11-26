@@ -25,11 +25,14 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-background text-foreground">
+      <body className="flex min-h-full flex-col">
         <SiteNav />
-        <main className="mx-auto w-full max-w-5xl flex-1 px-4 py-8">{children}</main>
-        <footer className="border-t px-4 py-4 text-center text-xs text-muted-foreground">
-          AI-generated ideas need human approval before posting. Demo business is fictional.
+        <main className="mx-auto w-full max-w-6xl flex-1 px-4 py-8 sm:px-6 sm:py-10">{children}</main>
+        <footer className="border-t border-border/70">
+          <div className="mx-auto flex w-full max-w-6xl flex-col gap-1 px-4 py-5 text-xs text-muted-foreground sm:flex-row sm:justify-between sm:px-6">
+            <p>AI-generated ideas need human approval before posting. Demo business is fictional.</p>
+            <p>TrendPilot · ENTI 633 proof of concept · Haskayne School of Business</p>
+          </div>
         </footer>
       </body>
     </html>

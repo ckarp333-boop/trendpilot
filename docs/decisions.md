@@ -117,4 +117,16 @@ Scope and design decisions, newest last.
 - **Polish:** active nav link, page titles, friendly error and 404 pages, empty states on calendar
   and metrics.
 - **Light theme only:** shadcn's dark styles switch on a `.dark` class, not the system setting, so
-  the app always renders light. A theme toggle is out of scope.
+  the app always renders light. A theme toggle is out of scope. *(Superseded by the UI refresh below.)*
+
+## 2026-11-25 — UI refresh
+- **Warm bakery palette** (cream background, espresso text, caramel accent) replaces shadcn's grey
+  default, so the demo looks like a product made for a small food business.
+- **Dark mode follows the system setting** (`prefers-color-scheme`), with matching dark-roast
+  tokens. No manual toggle.
+- **Modern patterns:** sticky frosted header with logo and the current business, page headers with
+  eyebrow labels, stat tiles, circular fit-score meters, icons (lucide), colour-coded filter layers
+  and platforms, skeleton loading states, empty states with guidance, and a sticky save bar on the
+  profile.
+- **Behaviour unchanged:** every label, role and flow the tests rely on was kept, and the full unit
+  and Playwright suites pass unchanged.

@@ -172,7 +172,7 @@ Full output and details are in [docs/test-evidence/](docs/test-evidence/README.m
 - **Browser-only storage:** the profile, calendar and metrics live in this browser's localStorage. There's no login, no sync between devices, and clearing site data erases them.
 - **Metrics are owner-entered;** there's no connection to Instagram, TikTok or Facebook analytics.
 - **An edited profile means live AI calls** (about 10–30 seconds, and API cost). Only the demo profile has cached results.
-- **Light theme only.**
+- **Theme follows the system setting** (light or dark); there's no manual toggle.
 
 ## Data sourcing disclaimer
 

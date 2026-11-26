@@ -1,7 +1,17 @@
 "use client";
 
 import Link from "next/link";
-import { Card, CardContent } from "@/components/ui/card";
+import {
+  ChartNoAxesColumn,
+  Eye,
+  Heart,
+  type LucideIcon,
+  MousePointerClick,
+  Send,
+  Timer,
+  Zap,
+} from "lucide-react";
+import { PageHeader } from "@/components/page-header";
 import { Input } from "@/components/ui/input";
 import { useCalendar, type CalendarEntry } from "@/lib/client/calendar-store";
 import { formatDay, fromISODate } from "@/lib/client/dates";
@@ -30,14 +40,13 @@ const FIELD: Record<Exclude<MetricKey, "speed">, { field: EnteredField; unit: st
 export function MetricsPanel() {
   const hydrated = useHydrated();
   return (
-    <section className="space-y-6">
-      <div className="space-y-1">
-        <h1 className="text-2xl font-semibold">Value metrics</h1>
-        <p className="text-muted-foreground">
-          Track whether trend-based posts are worth it. Speed to market is measured automatically; enter the rest
-          from each platform&apos;s own insights.
-        </p>
-      </div>
+    <section className="space-y-8">
+      <PageHeader
+        eyebrow="Results"
+        icon={ChartNoAxesColumn}
+        title="Value metrics"
+        description="Track whether trend-based posts are worth it. Speed to market is measured automatically; enter the rest from each platform's own insights."
+      />
       {hydrated ? <Metrics /> : <p className="text-muted-foreground">Loading metrics…</p>}
     </section>
   );
@@ -55,14 +64,18 @@ function Metrics() {
 
   return (
     <>
-      <fieldset className="rounded-lg border px-4 py-3">
+      <fieldset className="rounded-2xl border bg-card px-5 py-4 shadow-xs">
         <legend className="px-1 text-sm font-medium">Metrics to track</legend>
-        <div className="flex flex-wrap gap-x-6 gap-y-2">
+        <div className="flex flex-wrap gap-2">
           {METRICS.map((m) => (
-            <label key={m.key} className="flex cursor-pointer items-center gap-2 text-sm" title={m.help}>
+            <label
+              key={m.key}
+              title={m.help}
+              className="flex cursor-pointer items-center gap-2 rounded-full border px-3 py-1.5 text-sm transition-colors has-[:checked]:border-primary/40 has-[:checked]:bg-brand-soft has-[:checked]:text-primary"
+            >
               <input
                 type="checkbox"
-                className="size-4 accent-primary"
+                className="size-3.5 accent-primary"
                 checked={isEnabled(m.key)}
                 onChange={() => toggle(m.key)}
               />
@@ -73,34 +86,41 @@ function Metrics() {
       </fieldset>
 
       {entries.length === 0 ? (
-        <Card>
-          <CardContent className="py-6 text-center text-muted-foreground">
+        <div className="grid place-items-center gap-2 rounded-2xl border border-dashed bg-card/60 px-6 py-10 text-center">
+          <span className="grid size-12 place-items-center rounded-full bg-brand-soft text-primary">
+            <ChartNoAxesColumn aria-hidden className="size-6" />
+          </span>
+          <p className="max-w-md text-sm text-muted-foreground">
             No posts to measure yet. Approve some post ideas from the{" "}
             <Link href="/" className="underline underline-offset-2">
               dashboard
             </Link>{" "}
             and mark them posted on the calendar.
-          </CardContent>
-        </Card>
+          </p>
+        </div>
       ) : (
         <>
           <ValueStatement totals={totals} showSpeed={isEnabled("speed")} showTime={isEnabled("timeSaved")} />
 
           <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3" aria-label="Totals">
-            <Stat label="Posts" value={`${totals.posted} posted`} sub={`of ${totals.planned} planned`} />
+            <Stat icon={Send} label="Posts" value={`${totals.posted} posted`} sub={`of ${totals.planned} planned`} />
             {isEnabled("speed") && (
               <Stat
+                icon={Zap}
                 label="Avg speed to market"
                 value={totals.avgSpeedHours === null ? "—" : formatHours(totals.avgSpeedHours)}
                 sub="trend captured → posted"
               />
             )}
             {isEnabled("timeSaved") && (
-              <Stat label="Time saved" value={formatHours(totals.timeSavedMinutes / 60)} sub="owner estimate" />
+              <Stat icon={Timer} label="Time saved" value={formatHours(totals.timeSavedMinutes / 60)} sub="owner estimate" />
             )}
-            {isEnabled("attention") && <Stat label="Attention" value={nf.format(totals.impressions)} sub="views" />}
+            {isEnabled("attention") && (
+              <Stat icon={Eye} label="Attention" value={nf.format(totals.impressions)} sub="views" />
+            )}
             {isEnabled("engagement") && (
               <Stat
+                icon={Heart}
                 label="Engagement"
                 value={nf.format(totals.engagements)}
                 sub={
@@ -110,7 +130,9 @@ function Metrics() {
                 }
               />
             )}
-            {isEnabled("clicks") && <Stat label="Clicks" value={nf.format(totals.clicks)} sub="link / profile" />}
+            {isEnabled("clicks") && (
+              <Stat icon={MousePointerClick} label="Clicks" value={nf.format(totals.clicks)} sub="link / profile" />
+            )}
           </ul>
 
           <div className="overflow-x-auto rounded-lg border">
@@ -159,16 +181,17 @@ function Metrics() {
   );
 }
 
-function Stat({ label, value, sub }: { label: string; value: string; sub: string }) {
+function Stat({ icon: Icon, label, value, sub }: { icon: LucideIcon; label: string; value: string; sub: string }) {
   return (
-    <li>
-      <Card className="py-4">
-        <CardContent>
-          <p className="text-sm text-muted-foreground">{label}</p>
-          <p className="text-2xl font-semibold">{value}</p>
-          <p className="text-xs text-muted-foreground">{sub}</p>
-        </CardContent>
-      </Card>
+    <li className="flex items-start gap-3 rounded-2xl border bg-card p-4 shadow-xs">
+      <span className="grid size-10 shrink-0 place-items-center rounded-xl bg-brand-soft text-primary">
+        <Icon aria-hidden className="size-5" />
+      </span>
+      <span>
+        <span className="block text-sm text-muted-foreground">{label}</span>
+        <span className="block text-2xl font-semibold tabular-nums">{value}</span>
+        <span className="block text-xs text-muted-foreground">{sub}</span>
+      </span>
     </li>
   );
 }
