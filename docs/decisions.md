@@ -22,3 +22,21 @@ Scope and design decisions, newest last.
 ## 2026-11-25 — LLM model: Claude Sonnet 5.5
 - **Decision:** `ANTHROPIC_MODEL=claude-sonnet-5-5` (was `claude-sonnet-4-5` in the original setup).
 - **Why:** Current Sonnet model; set via env so it can be changed without code edits.
+
+## 2026-11-25 — Snapshot uses real public YouTube metadata, minimised
+- **Decision:** `data/youtube-snapshot.json` holds 37 real trending videos from YouTube Data API v3
+  (`videos.list chart=mostPopular`, `regionCode=CA`), fetched 2026-11-26 03:08 UTC with
+  `npm run fetch:youtube`. No synthetic fallback was needed: the endpoint still returns data.
+- **What we keep:** title, channel name, category, view count, publish date, video URL, up to 10 tags.
+  **Dropped:** descriptions, channel IDs, thumbnails, comments, likes, any viewer data.
+  @mentions of other people are stripped from titles and tags.
+- **Why:** BUILD_PLAN M1 asks for a real snapshot when a key is available; it makes the demo credible.
+  This is public video metadata, not personal data about viewers. CLAUDE.md's "synthetic data only"
+  rule still applies to everything we invent (the bakery profile, test fixtures, calendar entries).
+- **Known quirk:** YouTube's category filter on `mostPopular` is loose. Each video keeps its own
+  `snippet.categoryId`, so asking for 5 per category returned 0–10 per category and some videos in
+  categories we didn't request (e.g. Gaming, Autos). We store the video's real category, so the
+  safety filter's allowlist sees the truth. Pets & Animals (15) returned no videos on this run.
+- **Unsafe items present on purpose:** 4 News & Politics videos (category 25 was requested so the
+  filter has something to reject), plus 7 items in non-allowlisted categories (Film & Animation,
+  Autos & Vehicles, Travel & Events, Gaming, Science & Technology).
