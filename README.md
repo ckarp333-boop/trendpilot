@@ -9,6 +9,8 @@ original post ideas the owner can edit, approve and schedule.
 
 The demo business is **Rise & Grind Bakery**, a fictional bakery and cafe in Calgary.
 
+**Live demo:** [trendpilot-rho.vercel.app](https://trendpilot-rho.vercel.app/) (deployed on Vercel)
+
 ![Dashboard: safe trends ranked by fit](docs/screenshots/1-dashboard.png)
 
 ## The problem
