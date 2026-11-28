@@ -15,6 +15,14 @@ export const TrendItemSchema = z.object({
   publishedAt: z.iso.datetime({ offset: true }),
   url: z.url({ protocol: /^https$/, hostname: /^(www\.)?youtube\.com$/ }),
   tags: z.array(z.string().max(100)).max(15).default([]),
+  /** Engagement counts. Missing when the creator hides likes or turns comments off. */
+  likes: z.int().nonnegative().optional(),
+  comments: z.int().nonnegative().optional(),
+  /**
+   * The channel's public subscriber count (YouTube rounds it to 3 significant figures).
+   * Missing when the channel hides it. The channel ID itself is not stored.
+   */
+  channelSubscribers: z.int().nonnegative().optional(),
 });
 
 export const SnapshotSchema = z.object({

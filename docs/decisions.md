@@ -130,3 +130,21 @@ Scope and design decisions, newest last.
   profile.
 - **Behaviour unchanged:** every label, role and flow the tests rely on was kept, and the full unit
   and Playwright suites pass unchanged.
+
+## 2026-11-27 — Engagement signals
+- **A trend is still one popular video,** but each now shows three extra signals from public
+  YouTube counts: **velocity** (views per hour since posting), **engagement rate** ((likes +
+  comments) / views) and **breakout ratio** (views / channel subscribers). They help the owner tell
+  a fast-rising or breakout video from one that is just big.
+- **Cheap on quota:** likes and comments come in the same `videos.list` call we already make (no
+  extra cost). Subscriber counts take one `channels.list` call per 50 channels (1 unit).
+- **Calculated in code, not by the LLM,** and kept separate from the fit score. The fit score stays
+  a pure "how well does this suit the bakery" judgement, the signals are transparent and
+  unit-tested, and the cached AI results for the demo stay valid.
+- **Shown, not ranked by:** the list is still ordered by fit. Ranking or weighting by momentum is
+  left for later.
+- **Snapshot counts refreshed in place** (`npm run refresh:stats`): same 37 videos and the same
+  titles and tags, new counts and capture time, so no AI caches needed rebuilding.
+- **Not added:** shares/reposts (not in the public API; only the owner's own channel analytics
+  has them), dislikes (private since 2021), and comment text (personal data).
+- **Channel IDs aren't stored.** They're used only to look up subscriber counts.

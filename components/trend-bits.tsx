@@ -1,5 +1,7 @@
-import { ExternalLink, Eye } from "lucide-react";
+import { ExternalLink, Eye, Heart, Rocket, Zap } from "lucide-react";
 import type { FilterLayer } from "@/lib/safety/filter";
+import type { TrendItem } from "@/lib/youtube/schema";
+import { computeSignals } from "@/lib/youtube/signals";
 
 function fitTone(score: number) {
   if (score >= 70) return { stroke: "var(--success)", label: "Great fit" };
@@ -81,6 +83,67 @@ export function Views({ n }: { n: number }) {
       {formatViews(n)} views
     </span>
   );
+}
+
+/** Velocity, engagement and breakout chips for one trend. Hidden signals are skipped. */
+export function Signals({ item, asOf }: { item: TrendItem; asOf: string }) {
+  const s = computeSignals(item, asOf);
+  const chips: { icon: typeof Eye; text: string; title: string; hot: boolean }[] = [
+    {
+      icon: Zap,
+      text: `${formatViews(Math.round(s.viewsPerHour))}/hr`,
+      title: `Velocity: about ${formatViews(Math.round(s.viewsPerHour))} views per hour over ${formatHours(s.hoursLive)} since posting`,
+      hot: s.viewsPerHour >= HOT_VIEWS_PER_HOUR,
+    },
+  ];
+  if (s.engagementRate !== null) {
+    chips.push({
+      icon: Heart,
+      text: `${formatPercent(s.engagementRate)} engaged`,
+      title: "Engagement: likes plus comments as a share of views",
+      hot: s.engagementRate >= HOT_ENGAGEMENT,
+    });
+  }
+  if (s.breakoutRatio !== null) {
+    chips.push({
+      icon: Rocket,
+      text: `${formatRatio(s.breakoutRatio)} reach`,
+      title: `Breakout: views are ${formatRatio(s.breakoutRatio)} the channel's ${formatViews(item.channelSubscribers ?? 0)} subscribers`,
+      hot: s.breakoutRatio >= HOT_BREAKOUT,
+    });
+  }
+  return (
+    <span className="flex flex-wrap items-center gap-x-3 gap-y-1.5" aria-label="Engagement signals">
+      {chips.map(({ icon: Icon, text, title, hot }) => (
+        <span
+          key={title}
+          title={title}
+          className={`inline-flex items-center gap-1 text-xs ${hot ? "font-medium text-primary" : "text-muted-foreground"}`}
+        >
+          <Icon aria-hidden className="size-3.5" />
+          {text}
+          <span className="sr-only">. {title}</span>
+        </span>
+      ))}
+    </span>
+  );
+}
+
+/** Thresholds for highlighting a signal. Rough rules of thumb for mostPopular videos. */
+const HOT_VIEWS_PER_HOUR = 100_000;
+const HOT_ENGAGEMENT = 0.04;
+const HOT_BREAKOUT = 10;
+
+function formatPercent(r: number): string {
+  return `${(r * 100).toFixed(r < 0.1 ? 1 : 0)}%`;
+}
+
+function formatRatio(r: number): string {
+  return `${r >= 10 ? Math.round(r).toLocaleString("en-CA") : r.toFixed(1)}×`;
+}
+
+function formatHours(h: number): string {
+  return h < 48 ? `${Math.round(h)} hours` : `${Math.round(h / 24)} days`;
 }
 
 export function SourceLink({ url, label = "Watch source video" }: { url: string; label?: string }) {

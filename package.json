@@ -11,6 +11,7 @@
     "test:watch": "vitest",
     "test:e2e": "playwright test",
     "fetch:youtube": "tsx scripts/fetch-youtube.ts",
+    "refresh:stats": "tsx scripts/refresh-snapshot-stats.ts",
     "cache:safety": "tsx scripts/build-safety-cache.ts",
     "cache:generate": "tsx scripts/build-generate-cache.ts",
     "screenshots": "playwright test --config playwright.screenshots.config.ts"
