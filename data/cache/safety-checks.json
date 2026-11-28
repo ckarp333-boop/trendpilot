@@ -2,125 +2,140 @@
   "promptVersion": "safety-v1",
   "model": "claude-sonnet-5-5",
   "entries": {
-    "TZrML7oGRI4:9e3f58b23b49": {
-      "safe": false,
-      "reason": "Unclear content; title is ambiguous and may involve puppy breeding or whelping, so it can't be confirmed light-hearted. Marked unsafe when unsure.",
-      "checkedAt": "2026-11-26T03:23:49.875Z"
-    },
-    "GULTnfl8qWY:df2b73871340": {
-      "safe": false,
-      "reason": "Gender reveal of a private individual's baby is a personal family moment centred on a child, and gender reveals can be divisive, so it's not safe.",
-      "checkedAt": "2026-11-26T03:23:49.875Z"
+    "w_mMrUDZQ7s:6c9c8c6d276f": {
+      "safe": true,
+      "reason": "Harmless home DIY/how-to video with no sensitive themes; broadly appealing and light-hearted, fine for a cozy bakery reference.",
+      "checkedAt": "2026-11-28T00:39:07.055Z"
     },
     "tIo7IUyS9-4:03858f5ab778": {
       "safe": false,
-      "reason": "Unclear content involving police encounters, possibly legal trouble or mocking people, and possibly risky driving. Not clearly light-hearted, so marked unsafe.",
-      "checkedAt": "2026-11-26T03:23:49.875Z"
+      "reason": "Unclear content involving police encounters, possibly legal trouble or car stunts; not clearly light-hearted, so unsafe when unsure.",
+      "checkedAt": "2026-11-28T00:39:07.055Z"
+    },
+    "TZrML7oGRI4:9e3f58b23b49": {
+      "safe": false,
+      "reason": "Unclear content; title is ambiguous and may involve puppy care or whelping, which is unverified. When unsure, mark unsafe for a family bakery.",
+      "checkedAt": "2026-11-28T00:39:07.055Z"
+    },
+    "3cTdimJGm8w:63e81c34ee4d": {
+      "safe": false,
+      "reason": "Vague 'caught on camera' title suggests a real incident involving a private individual; content unclear, so too risky for a family bakery.",
+      "checkedAt": "2026-11-28T00:39:07.055Z"
+    },
+    "YqRRVu4SPFI:5b8e8709e448": {
+      "safe": false,
+      "reason": "Vague title with no tags; likely a personal or emotional story about private individuals. Content unclear, so marked unsafe to be cautious.",
+      "checkedAt": "2026-11-28T00:39:07.055Z"
     },
     "Wb8Tq_HD4E8:09ad0076d6ce": {
       "safe": true,
-      "reason": "Official Marvel movie trailer; light-hearted, broadly appealing entertainment with no controversy, violence news, or sensitive themes.",
-      "checkedAt": "2026-11-26T03:23:49.875Z"
-    },
-    "7o9Al07wa6M:68b22201ccd2": {
-      "safe": false,
-      "reason": "Title is vague and has no tags, so the content can't be verified as light-hearted. When unsure, mark unsafe.",
-      "checkedAt": "2026-11-26T03:23:49.875Z"
-    },
-    "W_cuX6leGak:ac0699ef21d4": {
-      "safe": false,
-      "reason": "Title is vague and gives no clear content; channel and tags don't confirm it's light-hearted, so it can't be verified as safe.",
-      "checkedAt": "2026-11-26T03:23:49.875Z"
-    },
-    "aCqDrqDTfoQ:7bfd0a96a2eb": {
-      "safe": false,
-      "reason": "Vague title with no clear subject; unclear who 'he' is or what the edit shows, so it can't be confirmed light-hearted.",
-      "checkedAt": "2026-11-26T03:23:49.875Z"
-    },
-    "jU6cUtK_hGk:2eba76742ffa": {
-      "safe": false,
-      "reason": "Mocks a private individual's struggles and is a couple's personal moment; diving may involve risk. Not clearly broadly appealing, so unsafe when unsure.",
-      "checkedAt": "2026-11-26T03:23:49.875Z"
+      "reason": "Official Marvel movie trailer; light-hearted, broadly appealing entertainment with no controversy, violence-focused news, or sensitive themes.",
+      "checkedAt": "2026-11-28T00:39:07.055Z"
     },
     "CV0mkRyaVtg:0d2630feac39": {
       "safe": true,
-      "reason": "Appears to be a harmless comedy clip from The Office with a Christmas theme; light-hearted and broadly appealing, no sensitive topics.",
-      "checkedAt": "2026-11-26T03:23:49.875Z"
+      "reason": "Appears to be a harmless comedy clip from The Office with a Christmas theme; light-hearted and broadly appealing.",
+      "checkedAt": "2026-11-28T00:39:07.055Z"
+    },
+    "qyT8O7CihjQ:26eedc58187b": {
+      "safe": false,
+      "reason": "Vague meme clip with no clear content; 'villain arc' and skull/wilted-rose emojis hint at dark or mocking humour. Unsure, so unsafe.",
+      "checkedAt": "2026-11-28T00:39:07.055Z"
+    },
+    "3ITB8QRpHok:45f09ee584cc": {
+      "safe": false,
+      "reason": "Title is vague, no clear content, and the channel is an unknown individual creator; can't confirm it's light-hearted, so marked unsafe.",
+      "checkedAt": "2026-11-28T00:39:07.055Z"
     },
     "1nSozFynnZ0:3eb7b02cfb10": {
       "safe": false,
-      "reason": "Title suggests relationship drama and possible shaming of private individuals; content unclear, so too risky for a family-friendly bakery.",
-      "checkedAt": "2026-11-26T03:23:49.875Z"
-    },
-    "sP2RHlT9hUc:a2425d765f75": {
-      "safe": false,
-      "reason": "Unclear content; may mock or shame small sellers' products, and nothing clearly shows it is light-hearted. When unsure, mark unsafe.",
-      "checkedAt": "2026-11-26T03:23:49.875Z"
-    },
-    "EetbXDtNS0g:54a55396bd35": {
-      "safe": true,
-      "reason": "Cozy bedroom makeover and DIY home decor video; light-hearted, broadly appealing, with no sensitive topics or embedded instructions.",
-      "checkedAt": "2026-11-26T03:23:49.875Z"
+      "reason": "Title suggests relationship drama and possible shaming of private individuals; unclear content, not clearly light-hearted or broadly appealing, so marked unsafe.",
+      "checkedAt": "2026-11-28T00:39:07.055Z"
     },
     "8_ex8qOVfN4:e4810334a574": {
       "safe": false,
-      "reason": "Personal vlog about a private couple's caregiving and disability, a sensitive topic; referencing it could seem insensitive or exploitative, so it's best avoided.",
-      "checkedAt": "2026-11-26T03:23:49.875Z"
+      "reason": "Personal vlog about a private couple's caregiving and disability; sensitive topic that could come across as insensitive or exploitative, so too risky for a bakery post.",
+      "checkedAt": "2026-11-28T00:39:07.055Z"
     },
-    "zdz8swOQUqw:4a221b68ed4a": {
-      "safe": true,
-      "reason": "Official music video release from a recording artist; no sensitive topics evident in title, category or tags, so it is broadly appealing.",
-      "checkedAt": "2026-11-26T03:23:49.875Z"
+    "sP2RHlT9hUc:a2425d765f75": {
+      "safe": false,
+      "reason": "Unclear content; could mock or shame small sellers' products, and no clear sign it's light-hearted. When unsure, mark unsafe.",
+      "checkedAt": "2026-11-28T00:39:07.055Z"
     },
-    "LJC7mgjp5FQ:021a609aaa34": {
+    "EetbXDtNS0g:54a55396bd35": {
       "safe": true,
-      "reason": "A live music performance by a popular artist from an awards show; light-hearted, broadly appealing, and no controversial content.",
-      "checkedAt": "2026-11-26T03:23:49.875Z"
+      "reason": "Cozy bedroom makeover and DIY home decor video; light-hearted, broadly appealing, and fits the bakery's cozy brand.",
+      "checkedAt": "2026-11-28T00:39:07.055Z"
     },
-    "tz8nh-16JWg:b1d8bdc02dfe": {
+    "mXpvbLDEVgQ:e8e929582375": {
       "safe": true,
-      "reason": "Official music video release by a Punjabi artist; light-hearted, broadly appealing music content with no sensitive topics or embedded instructions.",
-      "checkedAt": "2026-11-26T03:23:49.875Z"
+      "reason": "A Music category release by an artist topic channel with no controversial content; light-hearted and broadly appealing for a bakery post.",
+      "checkedAt": "2026-11-28T00:39:07.055Z"
     },
-    "hX9S94XsySk:20e630b2625a": {
+    "sxqm5f7SVYY:f76d23fcf9c6": {
       "safe": true,
-      "reason": "Official music video release from a major artist; music releases are broadly appealing, with no controversial topics in the title or tags.",
-      "checkedAt": "2026-11-26T03:23:49.875Z"
+      "reason": "Music release by Punjabi artists (auto-generated Topic channel); no controversial content indicated, light-hearted and broadly appealing.",
+      "checkedAt": "2026-11-28T00:39:07.055Z"
     },
-    "WAncuIORqxA:b9f1548251ea": {
+    "nobEyrFH0Gs:51fda01cfd18": {
+      "safe": false,
+      "reason": "Title 'Baba Marley' likely references Bob Marley and cannabis culture; song content is unclear, so drug references are possible. Unsure, so unsafe.",
+      "checkedAt": "2026-11-28T00:39:07.055Z"
+    },
+    "RA6R22nedK0:2cacc1b7d968": {
+      "safe": false,
+      "reason": "Unclear if 'Brownie' refers to the dessert or something else; lyrics unknown and Punjabi music videos may include alcohol or other mature themes. Unsure, so unsafe.",
+      "checkedAt": "2026-11-28T00:39:07.055Z"
+    },
+    "2ZPKLP80Wxk:7856d2d2509c": {
       "safe": true,
-      "reason": "Official NHL channel sports highlight with funny moments; light-hearted, broadly appealing hockey content with no sensitive topics, fitting for a Calgary bakery.",
-      "checkedAt": "2026-11-26T03:23:49.875Z"
+      "reason": "Official music video release for a new Punjabi song; no controversy, tragedy, or sensitive topics evident in the title or tags.",
+      "checkedAt": "2026-11-28T00:39:07.055Z"
     },
     "rWhXk94GwU0:6a011bd7aa39": {
       "safe": false,
-      "reason": "Tags reference Kobe Bryant, whose death is tragic; fan interaction content may involve private individuals or children, and the topic is unclear, so unsure means unsafe.",
-      "checkedAt": "2026-11-26T03:23:49.875Z"
+      "reason": "Unclear fan interaction possibly involving a child; tags reference Kobe Bryant, whose death is a sensitive topic. When unsure, mark unsafe.",
+      "checkedAt": "2026-11-28T00:39:07.055Z"
     },
-    "hScVhS3BOes:b727586e86fa": {
+    "WAncuIORqxA:b9f1548251ea": {
       "safe": true,
-      "reason": "Light-hearted hockey content with a podcast feature; sports topic is broadly appealing in Calgary and shows no risky themes.",
-      "checkedAt": "2026-11-26T03:23:49.875Z"
+      "reason": "Official NHL channel sports highlight with funny moments; light-hearted, broadly appealing hockey content that suits a Calgary bakery.",
+      "checkedAt": "2026-11-28T00:39:07.055Z"
     },
-    "Z1mHknI0kP8:f607f5ef7b8f": {
-      "safe": false,
-      "reason": "Involves an anthem mistake, which touches on national symbols and possible controversy or mocking; a Calgary audience may find it divisive, so unsure means unsafe.",
-      "checkedAt": "2026-11-26T03:23:49.875Z"
+    "D2N0J0tplyo:2c9e195befcc": {
+      "safe": true,
+      "reason": "Light-hearted motorsport prank video with an F1 driver and karting; no controversy, harm or sensitive themes evident, and broadly appealing.",
+      "checkedAt": "2026-11-28T00:39:07.055Z"
     },
     "wJ-A54rpHr0:0b48809948d1": {
       "safe": false,
-      "reason": "Features real football players in a parody; may mock or embarrass them, and the exact content is unclear, so it's too risky for a family bakery.",
-      "checkedAt": "2026-11-26T03:23:49.875Z"
+      "reason": "Features real football players in a parody; Lamine Yamal is a minor, and it may mock people. Unclear and not clearly harmless, so unsafe.",
+      "checkedAt": "2026-11-28T00:39:07.055Z"
     },
-    "4hZCdH0aDVA:3c6c8e451a51": {
-      "safe": true,
-      "reason": "Cute puppy video with harmless, broadly appealing content; no sensitive topics or instructions detected.",
-      "checkedAt": "2026-11-26T03:23:49.875Z"
-    },
-    "pUKiRbwUczU:6c52ec66833c": {
+    "fLN-ENDic8A:a77737b0e5bd": {
       "safe": false,
-      "reason": "Unclear promotional 'comment DRY' engagement bait with no verifiable light-hearted content; the topic is ambiguous, so it is marked unsafe by default.",
-      "checkedAt": "2026-11-26T03:23:49.875Z"
+      "reason": "Shows a violent-looking hockey incident and penalty; it's a potentially divisive rough-play controversy, so not clearly light-hearted for a family bakery.",
+      "checkedAt": "2026-11-28T00:39:07.055Z"
+    },
+    "H6-VW-HNA8M:f936d5f954e1": {
+      "safe": true,
+      "reason": "Light-hearted pet and dog content from an entertainment channel, with no sensitive topics and broad family appeal.",
+      "checkedAt": "2026-11-28T00:39:07.055Z"
+    },
+    "-i3ICvBBzUY:297d2bc21fab": {
+      "safe": true,
+      "reason": "Light-hearted pet video of a cat and dog; cute animals, no sensitive themes, and no embedded instructions.",
+      "checkedAt": "2026-11-28T00:39:07.055Z"
+    },
+    "SdPF653IwWI:bcdb62bc3486": {
+      "safe": true,
+      "reason": "Harmless, cute funny cat video about watermelon; light-hearted, food-related and broadly appealing with no sensitive topics.",
+      "checkedAt": "2026-11-28T00:39:07.055Z"
+    },
+    "6sbzrJbmHh8:03604b6cb7a1": {
+      "safe": false,
+      "reason": "Title points to news commentary from a podcast tied to a politically charged brand; likely divisive or political, and the content is unclear.",
+      "checkedAt": "2026-11-28T00:39:07.055Z"
     }
   }
 }
