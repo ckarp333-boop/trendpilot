@@ -2,60 +2,70 @@
   "promptVersion": "fit-v1",
   "model": "claude-sonnet-5-5",
   "entries": {
-    "cfb452524213:83344f3f852f": {
+    "cfb452524213:b7bbd087a1de": {
       "scores": [
+        {
+          "trendId": "w_mMrUDZQ7s",
+          "score": 8,
+          "reason": "Plumbing tutorial has no sensible link to bakery products or audience."
+        },
         {
           "trendId": "Wb8Tq_HD4E8",
           "score": 40,
-          "reason": "Superhero 'assemble' pun with a cake or pastry lineup; a stretch but playful."
+          "reason": "Superhero 'Doomsday' trailer; could do hero-themed cake or 'cinnamon bun hero' pun."
         },
         {
           "trendId": "CV0mkRyaVtg",
-          "score": 30,
-          "reason": "Office humour could nod to pre-work coffee runs, but the link is loose."
+          "score": 35,
+          "reason": "Office drama; could tie to coffee-before-work crowd, but loosely."
         },
         {
           "trendId": "EetbXDtNS0g",
-          "score": 72,
-          "reason": "Cozy sanctuary vibe fits a warm cafe with coffee and cinnamon buns."
+          "score": 55,
+          "reason": "Cozy sanctuary vibe fits cafe as warm study spot with pastries."
         },
         {
-          "trendId": "zdz8swOQUqw",
-          "score": 12,
-          "reason": "Punjabi music video with no clear bakery link; lyrics theme unclear."
+          "trendId": "mXpvbLDEVgQ",
+          "score": 22,
+          "reason": "Punjabi song titled Luxury; could pitch 'luxury' croissants but forced."
         },
         {
-          "trendId": "LJC7mgjp5FQ",
-          "score": 45,
-          "reason": "Taylor Swift song-title puns with cake or treats; broadly fan-friendly but a stretch."
+          "trendId": "sxqm5f7SVYY",
+          "score": 8,
+          "reason": "Song title references a luxury brand; no natural bakery tie-in."
         },
         {
-          "trendId": "tz8nh-16JWg",
-          "score": 12,
-          "reason": "Punjabi music video with no natural bakery tie-in."
-        },
-        {
-          "trendId": "hX9S94XsySk",
+          "trendId": "2ZPKLP80Wxk",
           "score": 15,
-          "reason": "Music video with no sensible bakery connection beyond a forced pun."
+          "reason": "Punjabi music video with no clear link to bakery offerings."
         },
         {
           "trendId": "WAncuIORqxA",
-          "score": 58,
-          "reason": "Calgary hockey fans enjoy puns; 'worm' could become a pastry joke."
-        },
-        {
-          "trendId": "hScVhS3BOes",
-          "score": 42,
-          "reason": "Hockey-themed post for local fans, but the podcast content is unclear."
-        },
-        {
-          "trendId": "4hZCdH0aDVA",
           "score": 55,
-          "reason": "Cute puppy content fits friendly vibe; pair with dog-walk coffee stop."
+          "reason": "Calgary hockey fans: game-day treats or early bird worm pun."
+        },
+        {
+          "trendId": "D2N0J0tplyo",
+          "score": 20,
+          "reason": "Racing prank is a stretch; maybe 'fast' espresso pun."
+        },
+        {
+          "trendId": "H6-VW-HNA8M",
+          "score": 18,
+          "reason": "Dog door design has little tie to bakery; maybe pet-friendly patio."
+        },
+        {
+          "trendId": "-i3ICvBBzUY",
+          "score": 30,
+          "reason": "Pet prank video; a playful pets-and-pastries post feels stretched."
+        },
+        {
+          "trendId": "SdPF653IwWI",
+          "score": 62,
+          "reason": "Cat loves red watermelon; pun on fruit galette being the good part."
         }
       ],
-      "createdAt": "2026-11-26T03:33:17.805Z"
+      "createdAt": "2026-11-28T00:39:16.444Z"
     }
   }
 }

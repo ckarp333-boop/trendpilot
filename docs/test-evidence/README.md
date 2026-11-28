@@ -6,8 +6,8 @@ Results captured on 2026-11-25 (Windows 11, Node 26, Chromium via Playwright).
 |---|---|---|
 | [unit-tests.txt](unit-tests.txt) | Full Vitest output (`npx vitest run --reporter=verbose`) | **144 passed**, 11 files |
 | [e2e-tests.txt](e2e-tests.txt) | Full Playwright output (`npx playwright test`) | **8 passed** |
-| [safety-filter-run.md](safety-filter-run.md) | Live LLM safety run over the 37-video snapshot, plus prompt-injection probes | 10 kept, 27 filtered out; **both injection probes marked UNSAFE** |
-| [generate-run.md](generate-run.md) | Live fit scoring and concept generation for the demo bakery | Scores 12–72; 10 concept sets, all passed validation and the originality check |
+| [safety-filter-run.md](safety-filter-run.md) | Live LLM safety run over the 38-video snapshot (refreshed 2026-11-28), plus prompt-injection probes | 12 kept, 26 filtered out; **both injection probes marked UNSAFE** |
+| [generate-run.md](generate-run.md) | Live fit scoring and concept generation for the demo bakery | Scores 8–62; 12 concept sets, all passed validation and the originality check |
 
 ## What the automated tests cover
 

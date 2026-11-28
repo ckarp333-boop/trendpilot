@@ -159,15 +159,15 @@ After refreshing the snapshot, run `cache:safety` and then `cache:generate` so t
 
 - **160 unit tests** (Vitest): safety layers, engagement signals, prompt injection, schema validation, retries and timeouts with a mocked LLM, API error handling, snapshot loading, metrics.
 - **8 end-to-end tests** (Playwright), including the full **profile → trend → generate → save → calendar** flow, run with the AI key blanked to prove the demo works from cached results.
-- **Live LLM runs:** the safety filter kept 10 of 37 trending videos and caught **both prompt-injection probes**. Fit scores ranged from 12 to 72.
+- **Live LLM runs:** the safety filter kept 12 of 38 trending videos and caught **both prompt-injection probes**. Fit scores ranged from 8 to 62.
 
 Full output and details are in [docs/test-evidence/](docs/test-evidence/README.md).
 
 ## Known limitations
 
-- **Snapshot, not live:** the demo uses YouTube's most-popular chart for Canada captured on 2026-11-26 (UTC), with view, like, comment and subscriber counts refreshed on 2026-11-28 (UTC). Trends go stale quickly; refreshing the trend list needs a YouTube key and two cache scripts.
+- **Snapshot, not live:** the demo uses YouTube's most-popular chart for Canada captured on 2026-11-28 (UTC). Trends go stale quickly; refreshing the trend list needs a YouTube key and two cache scripts.
 - **YouTube's category filter is loose:** some videos arrive in categories we didn't request. We use each video's own category, so the allowlist still applies correctly.
-- **The safety filter is deliberately cautious.** Keywords can't read context (for example "Attacking the weekend" is blocked), and the AI rejects vague titles. Only 10 of 37 trends survive. It can still make mistakes, which is why every post needs human approval.
+- **The safety filter is deliberately cautious.** Keywords can't read context (for example "Attacking the weekend" is blocked), and the AI rejects vague titles. Only 12 of 38 trends survive. It can still make mistakes, which is why every post needs human approval.
 - **Engagement signals are rough guides.** They are simple maths on public counts, shown next to the fit score but not used in the ranking. The highlight thresholds (100K views/hr, 4% engagement, 10× reach) are rules of thumb, not benchmarks. YouTube rounds subscriber counts, and some creators hide likes.
 - **Fit scores and ideas are AI-generated** and can be generic or miss local nuance. They're starting points, not finished posts.
 - **One industry, one platform:** prompts and the demo profile are tuned for a bakery/cafe and YouTube trends.

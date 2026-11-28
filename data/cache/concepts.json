@@ -2,471 +2,561 @@
   "promptVersion": "concepts-v1",
   "model": "claude-sonnet-5-5",
   "entries": {
+    "w_mMrUDZQ7s:6c9c8c6d276f:cfb452524213": {
+      "concepts": [
+        {
+          "hook": "Ever wonder what's hiding behind our kitchen wall? 🥐",
+          "caption": "Everything you love at Rise & Grind starts behind the scenes, long before the doors open at 7. Flour from Alberta, butter from nearby dairies, and a whole lot of early mornings. Come see how the magic gets from our kitchen to your cup and plate. ☕",
+          "visualIdea": "A behind-the-scenes film: start at the back door with the flour delivery, move to the dough mixer, the oven with croissants coming out, then pan to the front counter where a staff member hands over a pastry bag.",
+          "hashtags": [
+            "#CalgaryBakery",
+            "#YYCEats",
+            "#BehindTheBakes",
+            "#BakedFreshDaily"
+          ],
+          "platform": "TikTok",
+          "postingWindow": "Wednesday 7:00-9:00 AM"
+        },
+        {
+          "hook": "One kitchen, a whole lot of delicious connections 🍞",
+          "caption": "From a single oven, we send out sourdough, croissants, galettes and gluten-free brownies, and a little love goes with every one. Our day-old bread even finds its way to a local food bank. Good things really do flow from one warm kitchen. 💛",
+          "visualIdea": "A tidy overhead photo carousel: the oven in the middle, then one slide each for sourdough, croissants, a fruit galette, a gluten-free brownie, and a final slide of bread bagged up for the food bank donation.",
+          "hashtags": [
+            "#YYCFoodie",
+            "#CalgaryBakery",
+            "#LowWasteBaking",
+            "#SupportLocalYYC",
+            "#SourdoughLove"
+          ],
+          "platform": "Instagram",
+          "postingWindow": "Thursday 12:00-2:00 PM"
+        },
+        {
+          "hook": "Saturday plan: one stop, whole family happy 🥯",
+          "caption": "Cinnamon buns are out of the oven for Saturday, and there's coffee for the grown-ups and a pastry for everyone else. Grab a table, spread out, and stay a while. We're open 7 to 4 and the buns won't wait! 😄",
+          "visualIdea": "Film a warm, handheld clip of a tray of fresh cinnamon buns being pulled from the oven, then a family-friendly table with buns, a latte and a croissant, ending on the shop's front door sign.",
+          "hashtags": [
+            "#YYCWeekend",
+            "#CalgaryFamilies",
+            "#CinnamonBunSaturday",
+            "#YYCCafe"
+          ],
+          "platform": "Facebook",
+          "postingWindow": "Friday 4:00-6:00 PM"
+        }
+      ],
+      "createdAt": "2026-11-28T00:39:16.444Z"
+    },
     "Wb8Tq_HD4E8:09ad0076d6ce:cfb452524213": {
       "concepts": [
         {
-          "hook": "Assemble your breakfast team ☕🥐",
-          "caption": "Every great team needs the right lineup: a flaky croissant, a crusty sourdough loaf and a hot espresso. Together they make a morning unstoppable. Come build your dream squad before work. We're open Tue-Sun from 7:00! 🥖",
-          "visualIdea": "Overhead shot of a croissant, a pain au chocolat, a small sourdough loaf and an espresso arranged like a lineup on the counter, with a hand-written chalkboard sign reading 'Today's Lineup'. Finish with a quick pan across the items.",
+          "hook": "Assembling the ultimate breakfast team ☕🥐",
+          "caption": "Every great team needs the right lineup. Ours: a flaky croissant, a crusty sourdough loaf and a hot espresso. Together they save your morning. Come assemble your crew before work, we open at 7! 🦸",
+          "visualIdea": "Overhead shot of a croissant, a sourdough loaf and an espresso arranged like a lineup on the counter, with a quick pan across each item and a staff member sliding the coffee into frame.",
           "hashtags": [
+            "#CalgaryBakery",
             "#YYCEats",
-            "#CalgaryBakery",
-            "#YYCFoodie",
-            "#SourdoughLove",
-            "#BreakfastSquad"
-          ],
-          "platform": "Instagram",
-          "postingWindow": "Wednesday 7:00-9:00 AM"
-        },
-        {
-          "hook": "Big blockbuster movie night calls for bigger snacks 🍿➡️🍫",
-          "caption": "Heading out for a movie weekend? Skip the popcorn line and stock up on our gluten-free brownies instead. Fudgy, rich and baked fresh from scratch this morning. Grab a box for the whole crew! 🎬",
-          "visualIdea": "Film a cozy living-room style setup on a cafe table: a box of gluten-free brownies, a couple of cinnamon buns and a coffee. Show a staff member sliding the box across the counter with a big smile, then a close-up of a brownie being broken in half.",
-          "hashtags": [
-            "#YYCFamily",
-            "#CalgaryEats",
-            "#GlutenFreeYYC",
-            "#MovieNightTreats",
-            "#YYCBakery"
-          ],
-          "platform": "TikTok",
-          "postingWindow": "Friday 3:00-5:00 PM (post ahead of weekend plans; our doors are open until 4:00 PM Fri)"
-        },
-        {
-          "hook": "Our secret weapon? A Saturday cinnamon bun. 💥",
-          "caption": "Every hero story has a powerful moment, and ours happens Saturday mornings when the cinnamon buns come out of the oven. Warm, gooey and made with local Alberta flour and dairy. Bring the family and save one for yourself! 🧡",
-          "visualIdea": "Slow-motion video of a tray of fresh cinnamon buns coming out of the oven, steam rising, then icing being drizzled on top. End with a family-style shot of buns being pulled apart at a cafe table.",
-          "hashtags": [
-            "#YYCSaturday",
-            "#CalgaryBakery",
-            "#CinnamonBuns",
-            "#YYCFamilies",
-            "#SupportLocalYYC"
-          ],
-          "platform": "Facebook",
-          "postingWindow": "Friday 6:00-8:00 PM"
-        }
-      ],
-      "createdAt": "2026-11-26T03:33:17.805Z"
-    },
-    "CV0mkRyaVtg:0d2630feac39:cfb452524213": {
-      "concepts": [
-        {
-          "hook": "Plot twist: the real office hero is the one holding the croissants. 🥐",
-          "caption": "Every workplace has a moment where someone walks in with pastries and the whole room cheers. Be that person this week. Our croissants and pain au chocolat are baked fresh every morning from scratch with Alberta dairy. Order a box for your team and take a bow. 😄",
-          "visualIdea": "Film a short POV of someone walking into a bright office carrying a Rise & Grind pastry box, then slowly opening it as coworkers' hands reach in. End on a close-up of a flaky croissant being pulled apart.",
-          "hashtags": [
-            "#YYCEats",
-            "#CalgaryBakery",
-            "#YYCFoodie",
-            "#OfficeTreats",
-            "#RiseAndGrindYYC"
-          ],
-          "platform": "TikTok",
-          "postingWindow": "Wednesday 7:30-9:00 AM"
-        },
-        {
-          "hook": "Staff meeting at the bakery: one item on the agenda, cinnamon buns. 🎤",
-          "caption": "Our team has gathered to make a very serious announcement: Saturday is cinnamon bun day. They are warm, gooey and baked fresh from scratch. Come early, because the good news tends to go fast. 🧡",
-          "visualIdea": "Have a baker stand at the counter with a tray of fresh cinnamon buns as if giving a big announcement, with staff nodding seriously behind them. Cut to a close-up of icing being drizzled over the buns.",
-          "hashtags": [
-            "#YYCBakery",
-            "#CalgaryEats",
-            "#CinnamonBuns",
-            "#YYCFamilies",
-            "#SaturdayTreat"
-          ],
-          "platform": "Instagram",
-          "postingWindow": "Friday 4:00-6:00 PM"
-        },
-        {
-          "hook": "Dear coworkers: we need to talk about your coffee order. ☕",
-          "caption": "Consider this a friendly team memo from your neighbourhood bakery. Mondays are easier with a good espresso and something sweet from the case. Bring a colleague, split a gluten-free brownie, and call it a team-building exercise. 😉",
-          "visualIdea": "Photograph two coffee cups and a gluten-free brownie on a cafe table beside a laptop and notebook, with a handwritten note card reading 'Team Meeting at Rise & Grind'. Add a few real customers chatting in the background if they are happy to be shown.",
-          "hashtags": [
             "#YYCCoffee",
-            "#CalgaryCafe",
-            "#YYCWorkLife",
-            "#YYCStudySpot",
-            "#RiseAndGrindYYC"
-          ],
-          "platform": "Facebook",
-          "postingWindow": "Tuesday 7:00-9:00 AM"
-        }
-      ],
-      "createdAt": "2026-11-26T03:33:17.805Z"
-    },
-    "EetbXDtNS0g:54a55396bd35:cfb452524213": {
-      "concepts": [
-        {
-          "hook": "Your morning routine deserves a cozy makeover too ☕🥐",
-          "caption": "We can't redo your bedroom, but we can transform your morning! Start with a warm croissant, a fresh espresso and a seat by our window. Baked fresh from scratch every morning, just for you. Come in and get cozy with us! 🧡",
-          "visualIdea": "Short before-and-after video: first a plain counter with an empty mug, then the same spot 'styled up' with a flaky croissant, a latte with art, and a folded napkin. Use a quick cut transition with natural window light.",
-          "hashtags": [
-            "#YYCbakery",
-            "#CalgaryEats",
-            "#CozyMorning",
-            "#RiseAndGrind",
-            "#YYCcoffee"
-          ],
-          "platform": "TikTok",
-          "postingWindow": "Tuesday 7:00-9:00 AM"
-        },
-        {
-          "hook": "Cozy weekend setup: complete ✅ Just add cinnamon buns.",
-          "caption": "Blankets, a slow morning and a warm cinnamon bun still gooey from the oven. That's our idea of a sanctuary. 🧁 Saturday cinnamon buns are back, made with Alberta dairy and baked fresh this morning. Bring the family and grab a cozy corner!",
-          "visualIdea": "Overhead photo of a tray of cinnamon buns next to two mugs of coffee and a knitted blanket draped over a cafe chair. Add a hand pulling a bun apart to show the gooey centre.",
-          "hashtags": [
-            "#YYCfamilies",
-            "#CalgaryBakery",
-            "#CinnamonBunSaturday",
-            "#YYCfoodie",
-            "#CozyVibes"
-          ],
-          "platform": "Instagram",
-          "postingWindow": "Friday 5:00-7:00 PM"
-        },
-        {
-          "hook": "Study nook, upgraded. 📚☕",
-          "caption": "Finals season or just catching up on work? We've got the cozy corner, the strong drip coffee and a gluten-free brownie for brain fuel. Our friendly staff will even save you a warm seat. Pull up a chair, Calgary! 🤎",
-          "visualIdea": "Photo of a corner table with a laptop, notebook, drip coffee and a gluten-free brownie on a small plate. Include a barista placing a fresh refill beside it, with soft light from the window.",
-          "hashtags": [
-            "#YYCstudents",
-            "#CalgaryCafe",
-            "#StudySpot",
-            "#UofCstudents",
-            "#YYCbakery"
-          ],
-          "platform": "Facebook",
-          "postingWindow": "Sunday 10:00 AM-12:00 PM"
-        }
-      ],
-      "createdAt": "2026-11-26T03:33:17.805Z"
-    },
-    "zdz8swOQUqw:4a221b68ed4a:cfb452524213": {
-      "concepts": [
-        {
-          "hook": "Plot twist: we never left the oven. 🥐",
-          "caption": "Another new music drop is making the rounds, but our big comeback happens every single morning. Fresh croissants, shaped by hand and out of the oven before most of Calgary hits snooze. Come grab one while they're still warm! ☕",
-          "visualIdea": "Time-lapse of a tray of croissants going into the oven and coming out golden, ending with a baker sliding the tray onto the counter and a hand reaching for one.",
-          "hashtags": [
-            "#YYCBakery",
-            "#CalgaryEats",
             "#FreshBaked",
-            "#Croissants",
             "#RiseAndGrind"
           ],
-          "platform": "TikTok",
+          "platform": "Instagram",
           "postingWindow": "Wednesday 7:00-9:00 AM"
         },
         {
-          "hook": "Your Saturday soundtrack? Cinnamon buns and good company. 🎶",
-          "caption": "Everyone's got a favourite song on repeat, and ours is the sound of cinnamon buns coming out of the oven. Saturday special is back, made from scratch with Alberta flour and dairy. Bring the family and stay a while! 🧡",
-          "visualIdea": "Close-up of a tray of gooey cinnamon buns being iced, then a family at a cafe table pulling one apart. Capture the steam and the icing drip.",
-          "hashtags": [
-            "#YYCFamilies",
-            "#CalgaryBakery",
-            "#CinnamonBuns",
-            "#SaturdayTreat",
-            "#YYCFood"
-          ],
-          "platform": "Instagram",
-          "postingWindow": "Saturday 7:30-9:30 AM"
-        },
-        {
-          "hook": "Study playlist ready? Add a sourdough sidekick. 📚",
-          "caption": "Midterm season called, and we picked up. Pair a fresh espresso with a gluten-free brownie and claim a cozy table. Our baristas will keep the refills friendly and the vibes calm. ☕",
-          "visualIdea": "Cozy shot of a corner table with a laptop, notebook, latte and a gluten-free brownie on a plate, with a barista setting down the coffee.",
-          "hashtags": [
-            "#YYCStudents",
-            "#CalgaryCafe",
-            "#StudySpot",
-            "#YYCCoffee",
-            "#UofCStudyBreak"
-          ],
-          "platform": "Facebook",
-          "postingWindow": "Tuesday 3:00-4:00 PM"
-        }
-      ],
-      "createdAt": "2026-11-26T03:33:17.805Z"
-    },
-    "LJC7mgjp5FQ:021a609aaa34:cfb452524213": {
-      "concepts": [
-        {
-          "hook": "Live music night? We'll bring the sweet notes. 🎶",
-          "caption": "Everyone's buzzing about a big country music night on stage, and we're feeling inspired. Our setlist is a little different: croissants, cinnamon buns and a flaky pain au chocolat encore. Come hear the crunch at Rise & Grind. 🥐",
-          "visualIdea": "Close-up video of a tray of fresh croissants and pain au chocolat coming out of the oven, with a baker tapping a croissant so the crisp crackle is heard. Finish on a chalkboard reading 'Today's Lineup'.",
-          "hashtags": [
-            "#CalgaryBakery",
-            "#YYCEats",
-            "#CroissantLove",
-            "#RiseAndGrind"
-          ],
-          "platform": "TikTok",
-          "postingWindow": "Tuesday 7:00-9:00 AM"
-        },
-        {
-          "hook": "Sing-along season, bakery edition: who's your Saturday headliner? 🎤",
-          "caption": "Big stage energy deserves a big cinnamon bun. Our Saturday specials are gooey, warm and baked from scratch with local Alberta flour and dairy. Bring the family, grab a table and pick your favourite. Which one gets your vote? 🧡",
-          "visualIdea": "Photo carousel of a tray of cinnamon buns, a family sharing one at a table, and a hand-lettered 'Saturday Special' sign in the shop window.",
+          "hook": "Big blockbuster energy, but make it cinnamon bun 🎬",
+          "caption": "Saturday is our big premiere: warm, gooey cinnamon buns fresh out of the oven. No spoilers, but the ending involves extra icing. Bring the family and grab a box before the sold-out sign shows up! 🍥",
+          "visualIdea": "Slow-motion video of icing being poured over a tray of just-baked cinnamon buns, then a cut to a family pulling one apart at a cafe table. Add a hand-written chalkboard sign reading 'Now Showing: Saturday Buns'.",
           "hashtags": [
             "#YYCFamilies",
             "#CalgaryBakery",
             "#CinnamonBuns",
             "#YYCWeekend",
-            "#SaturdayTreat"
-          ],
-          "platform": "Instagram",
-          "postingWindow": "Friday 4:00-6:00 PM"
-        },
-        {
-          "hook": "Study session soundtrack: coffee, a brownie and your best playlist. ☕",
-          "caption": "Great songs and good stories are even better with something tasty nearby. Our espresso and gluten-free brownies are ready for your next study or catch-up session. Pull up a chair, we saved you a spot. 💛",
-          "visualIdea": "Cozy shot of a student's table with headphones, laptop, a latte with art and a gluten-free brownie, with the barista sliding the cup across the counter.",
-          "hashtags": [
-            "#YYCStudySpot",
-            "#CalgaryCafe",
-            "#GlutenFreeTreats",
-            "#YYCCoffee"
-          ],
-          "platform": "Facebook",
-          "postingWindow": "Wednesday 12:00-2:00 PM"
-        }
-      ],
-      "createdAt": "2026-11-26T03:33:17.805Z"
-    },
-    "tz8nh-16JWg:b1d8bdc02dfe:cfb452524213": {
-      "concepts": [
-        {
-          "hook": "Your morning playlist called. It wants a croissant. 🥐",
-          "caption": "Every good day starts with a great song and something fresh from the oven. Our croissants and pain au chocolat are baked from scratch every morning with Alberta butter and flour. Grab one with your coffee and press play on your day. ☕",
-          "visualIdea": "Short vertical video: a hand sets a tray of warm croissants on the counter, then a barista pours a latte. Show a phone with headphones resting next to the pastry box. No music from any video is used.",
-          "hashtags": [
-            "#CalgaryBakery",
-            "#YYCEats",
-            "#CroissantLove",
-            "#MorningVibes",
-            "#RiseAndGrind"
+            "#SaturdaySpecial"
           ],
           "platform": "TikTok",
-          "postingWindow": "Wednesday 7:00-9:00 AM"
+          "postingWindow": "Saturday 8:00-10:00 AM"
         },
         {
-          "hook": "Sing along if you know the words to our Saturday special. 🎶",
-          "caption": "Our cinnamon buns are back this Saturday, warm, gooey and made for sharing. Bring the whole family and turn your weekend outing into a little celebration. Come early, because they go fast! 🧁",
-          "visualIdea": "Overhead photo of a tray of fresh cinnamon buns being pulled apart, with a family's hands reaching in. Add a chalkboard sign in the shop reading 'Saturday Buns Are Here'.",
+          "hook": "Plot twist: your cake is the main event 🎂",
+          "caption": "Planning a birthday or party? Our custom celebration cakes are baked from scratch with local Alberta flour and dairy, and designed with you. Tell us your theme and we will build something worth cheering about. Message us or pop in to book! 🎉",
+          "visualIdea": "Short behind-the-scenes reel of a baker decorating a custom cake, ending with a reveal of the finished cake on the counter and the customer's happy reaction (with permission).",
           "hashtags": [
-            "#YYCFamilies",
+            "#YYCCakes",
             "#CalgaryBakery",
-            "#CinnamonBuns",
-            "#SaturdayTreat",
-            "#YYCFood"
+            "#CustomCakes",
+            "#YYCBirthday",
+            "#SupportLocalYYC"
+          ],
+          "platform": "Facebook",
+          "postingWindow": "Thursday 11:00 AM-1:00 PM"
+        }
+      ],
+      "createdAt": "2026-11-28T00:39:16.444Z"
+    },
+    "CV0mkRyaVtg:0d2630feac39:cfb452524213": {
+      "concepts": [
+        {
+          "hook": "Plot twist: the best part of your workday starts at 7 AM ☕",
+          "caption": "Office life is full of big feelings, and we get it. Before the inbox hits, swing by for a flaky croissant and a hot latte. Baked fresh from scratch this morning, with Alberta flour and dairy. Your 9 AM self will thank you 🥐",
+          "visualIdea": "Quick-cut video: a barista slides a latte and a warm croissant across the counter to a commuter in work clothes, then a close-up of the croissant being torn open to show the layers.",
+          "hashtags": [
+            "#CalgaryCoffee",
+            "#YYCEats",
+            "#CalgaryBakery",
+            "#MorningRitual"
+          ],
+          "platform": "TikTok",
+          "postingWindow": "Tuesday 7:00-9:00 AM"
+        },
+        {
+          "hook": "Team meeting? Bring the brownies. 🍫",
+          "caption": "Every office has a snack hero, and it could be you. Grab a box of our gluten-free brownies and a few cinnamon buns on Saturday to share with the crew. Fresh-baked and made to be passed around. Cheers to the coworkers who make the day better 💛",
+          "visualIdea": "Overhead photo of a bakery box open on a desk with gluten-free brownies, with a coffee cup and notepad around it. Add a hand-written label reading 'Office hero snacks'.",
+          "hashtags": [
+            "#YYCBakery",
+            "#CalgaryFoodie",
+            "#YYCOffice",
+            "#GlutenFreeTreats"
           ],
           "platform": "Instagram",
-          "postingWindow": "Friday 4:00-6:00 PM"
+          "postingWindow": "Wednesday 11:00 AM-1:00 PM"
         },
         {
-          "hook": "The best parties have great music, good company and a cake. 🎂",
-          "caption": "Planning a birthday or a get-together? Our custom celebration cakes are made from scratch and decorated just how you like. Pop in and tell us your idea, and we will bring the sweet part. Order early so we can save your date! 🎉",
-          "visualIdea": "Time-lapse of a baker decorating a custom cake in the Rise & Grind kitchen, ending with the finished cake on a table with candles and a few friends smiling around it.",
+          "hook": "Big announcements deserve a big cake 🎂",
+          "caption": "Birthdays, promotions, last-day-before-holidays: we bake it all. Our custom celebration cakes are made from scratch and decorated by hand right here in the shop. Tell us the occasion and we'll handle the sweet part. Order a few days ahead 🎉",
+          "visualIdea": "Time-lapse of a baker piping the final decoration on a custom celebration cake, ending with the finished cake on the counter and a staff member giving a cheerful wave.",
           "hashtags": [
             "#CalgaryCakes",
             "#YYCBirthday",
-            "#CustomCakes",
-            "#YYCBakery",
-            "#CelebrationCake"
+            "#CustomCakesYYC",
+            "#SupportLocalYYC"
           ],
           "platform": "Facebook",
           "postingWindow": "Thursday 12:00-2:00 PM"
         }
       ],
-      "createdAt": "2026-11-26T03:33:17.805Z"
+      "createdAt": "2026-11-28T00:39:16.444Z"
     },
-    "hX9S94XsySk:20e630b2625a:cfb452524213": {
+    "EetbXDtNS0g:54a55396bd35:cfb452524213": {
       "concepts": [
         {
-          "hook": "Last night's late set, this morning's first batch 🌅",
-          "caption": "While the city sleeps in, we're up shaping sourdough and laminating croissants. By the time the sun hits Calgary, the first trays are out and the coffee's hot. Come grab the freshest bite of your day ☕🥐",
-          "visualIdea": "Time-lapse of the bakery going from dark to sunrise: dough being shaped, croissants going into the oven, then the first golden tray set on the counter next to a fresh espresso as light comes through the window.",
+          "hook": "Your morning routine deserves a cozy makeover too ☕",
+          "caption": "Forget the throw pillows, the coziest corner in Calgary starts with a warm croissant and a fresh latte. Come in, pick your spot and settle in. We baked it fresh this morning, so all you have to do is get comfy. 🥐",
+          "visualIdea": "Short video of a window seat in the cafe being 'styled' with a blanket-soft croissant, a latte with art, and a stack of pain au chocolat. Finish with a slow pan across the cozy seating area.",
           "hashtags": [
             "#YYCEats",
             "#CalgaryBakery",
-            "#BakedFreshDaily",
-            "#SunriseBakers"
+            "#CozyCafe",
+            "#YYCCoffee",
+            "#RiseAndGrindBakery"
           ],
-          "platform": "TikTok",
+          "platform": "Instagram",
           "postingWindow": "Tuesday 7:00-9:00 AM"
         },
         {
-          "hook": "New release day at the pastry case 🎶",
-          "caption": "Music fans know the thrill of a fresh drop, and we feel it every time a new seasonal galette comes out of the oven. Juicy fruit, flaky crust, zero skips. Stop by and give it a listen... we mean a taste 😄",
-          "visualIdea": "Close-up of a seasonal fruit galette being pulled from the oven, then sliced to show the filling. Finish with a hand-written chalkboard sign reading 'Now playing: today's galette'.",
+          "hook": "We don't do bedroom makeovers, but we do cake makeovers 🎂",
+          "caption": "Plain cake in, showstopper out! Our custom celebration cakes get the full glow-up, designed around your person, your theme and your favourite flavours. Birthday or anniversary, we'll make it a little sweeter. Message us to start your order. 💛",
+          "visualIdea": "Time-lapse of a baker decorating a plain frosted cake into a finished celebration cake in the shop kitchen, with a before-and-after reveal at the end.",
           "hashtags": [
-            "#YYCFoodie",
-            "#CalgaryBakery",
-            "#FruitGalette",
-            "#YYCCafe",
-            "#LocalAlberta"
+            "#YYCCakes",
+            "#CalgaryBaker",
+            "#CustomCakes",
+            "#YYCBirthday",
+            "#BakeryTikTok"
           ],
-          "platform": "Instagram",
-          "postingWindow": "Friday 11:30 AM-1:00 PM"
+          "platform": "TikTok",
+          "postingWindow": "Thursday 5:00-7:00 PM"
         },
         {
-          "hook": "Take a world tour without leaving the neighbourhood 🌍",
-          "caption": "Buttery French-style croissants, warm cinnamon buns, and espresso pulled just right, all baked and brewed right here in Calgary with Alberta flour and dairy. Bring the family and pick your destination. Cinnamon buns are our Saturday special! 🥐☕",
-          "visualIdea": "Overhead shot of a tray with a croissant, a pain au chocolat, a cinnamon bun and a latte, with small handmade paper flags on toothpicks. Staff member slides the tray toward the camera with a smile.",
+          "hook": "Cozy Saturday mood: cinnamon buns and nowhere to be 🌀",
+          "caption": "Saturday means cinnamon buns, and they're warm, gooey and ready for the whole family. Grab a box, snag a table and make the weekend feel like a little sanctuary. Made from scratch with Alberta flour and dairy. Come early, they go fast! 😄",
+          "visualIdea": "Close-up of a tray of cinnamon buns fresh from the oven, then a family at a cafe table pulling one apart, with coffee mugs and soft morning light.",
           "hashtags": [
-            "#YYCFamilies",
+            "#YYCFamily",
             "#CalgaryBakery",
-            "#SaturdayCinnamonBuns",
-            "#YYCEats"
-          ],
-          "platform": "Facebook",
-          "postingWindow": "Saturday 8:00-10:00 AM"
-        }
-      ],
-      "createdAt": "2026-11-26T03:33:17.805Z"
-    },
-    "WAncuIORqxA:b9f1548251ea:cfb452524213": {
-      "concepts": [
-        {
-          "hook": "Calgary, hockey season called. We answered with butter. 🏒🥐",
-          "caption": "Game day in Calgary needs a proper warm-up. Our croissants are laminated by hand every morning, so they're flaky enough to win any face-off. Grab a few before puck drop and bring the whole crew. 🥐",
-          "visualIdea": "Close-up of a tray of fresh croissants coming out of the oven, then a hand pulling one apart to show the layers. Finish with a mini hockey stick or puck prop next to the tray on the counter.",
-          "hashtags": [
-            "#CalgaryBakery",
-            "#YYCEats",
-            "#YYCHockey",
-            "#GameDaySnacks",
-            "#FreshBaked"
-          ],
-          "platform": "Instagram",
-          "postingWindow": "Friday 7:00-9:00 AM"
-        },
-        {
-          "hook": "Plot twist: the best assist today is a cinnamon bun. 🍥",
-          "caption": "Saturday means cinnamon buns, warm, gooey and baked from scratch with Alberta flour and dairy. Bring the family, split one (or don't, no judgment) and settle in for a cozy weekend morning. Come early, because they go fast! 😄",
-          "visualIdea": "Quick video of a staff member drizzling icing over a fresh tray of cinnamon buns, then a family-style shot of a bun being pulled apart on the cafe table. Add a text overlay: 'Saturday only'.",
-          "hashtags": [
-            "#YYCFoodie",
             "#CinnamonBuns",
-            "#SaturdayTreat",
-            "#CalgaryFamilies",
-            "#SupportLocalYYC"
-          ],
-          "platform": "TikTok",
-          "postingWindow": "Saturday 8:00-10:00 AM"
-        },
-        {
-          "hook": "Our crew has big team energy before sunrise. 🥖☕",
-          "caption": "Every great team has a roster. Ours: sourdough on defence, espresso on offence and brownies (gluten-free!) as our secret weapon. Come meet the lineup at your neighbourhood bakery, and swing by before work or class. 💛",
-          "visualIdea": "A quick pan across the counter introducing each product like a starting lineup: sourdough loaf, croissant, espresso pour, gluten-free brownie. Each gets a text label with a fun 'position' and the baker waves at the end.",
-          "hashtags": [
-            "#CalgaryCafe",
-            "#YYCBakery",
-            "#YYCCoffee",
-            "#GlutenFreeYYC",
-            "#NeighbourhoodBakery"
-          ],
-          "platform": "Facebook",
-          "postingWindow": "Wednesday 7:00-9:00 AM"
-        }
-      ],
-      "createdAt": "2026-11-26T03:33:17.805Z"
-    },
-    "hScVhS3BOes:b727586e86fa:cfb452524213": {
-      "concepts": [
-        {
-          "hook": "Calgary knows a good game plan when it sees one. 🥐",
-          "caption": "Our game plan for a great morning: croissants out of the oven by 7:00, coffee on, doors open. Simple plays work best. Come grab a flaky pain au chocolat before the first period of your workday. 🥐☕",
-          "visualIdea": "Short vertical video: a tray of fresh croissants sliding out of the oven, then a baker placing a pain au chocolat on the counter next to a hot espresso. Quick cuts with natural shop sound.",
-          "hashtags": [
-            "#YYCBakery",
-            "#CalgaryEats",
-            "#YYCCoffee",
-            "#FreshBaked",
-            "#RiseAndGrindYYC"
-          ],
-          "platform": "TikTok",
-          "postingWindow": "Wednesday 7:00-8:30 AM"
-        },
-        {
-          "hook": "Sunday plans? Pack the whole team. 🧡",
-          "caption": "Hockey season means busy weekends, early rinks and hungry kids. Swing by after the game for a warm cinnamon bun and a hot coffee for the grown-ups. Saturday buns are made fresh and they go fast, so don't wait for overtime! 😄",
-          "visualIdea": "Photo of a box of fresh cinnamon buns on the counter beside a couple of takeaway coffees and a kid-sized hot chocolate, with a friendly staff member handing the box over.",
-          "hashtags": [
-            "#YYCFamilies",
-            "#CalgaryBakery",
-            "#CinnamonBunSaturday",
-            "#YYCEats",
-            "#SupportLocalYYC"
-          ],
-          "platform": "Facebook",
-          "postingWindow": "Saturday 8:00-10:00 AM"
-        },
-        {
-          "hook": "Study break strategy: sourdough edition. 📚",
-          "caption": "Midterm crunch calls for a smart play: a quiet table, a strong espresso and a gluten-free brownie. Our baker's trick is simple: fresh dough, patience and good flour from Alberta. Bring your laptop and stay a while. 🍞",
-          "visualIdea": "Cozy photo carousel: a student's table with a laptop, an espresso and a brownie, then a close-up of a sourdough loaf being scored, then the finished loaf cooling on a rack.",
-          "hashtags": [
-            "#YYCStudents",
-            "#CalgaryCafe",
-            "#SourdoughLove",
-            "#YYCFoodie",
-            "#StudySpotYYC"
-          ],
-          "platform": "Instagram",
-          "postingWindow": "Thursday 2:00-4:00 PM"
-        }
-      ],
-      "createdAt": "2026-11-26T03:33:17.805Z"
-    },
-    "4hZCdH0aDVA:3c6c8e451a51:cfb452524213": {
-      "concepts": [
-        {
-          "hook": "Warning: this tray of cinnamon buns may cause extreme heart-eyes 😍",
-          "caption": "Some things are just too sweet to handle, and our Saturday cinnamon buns are one of them. 🥹 Baked fresh this morning with local Alberta flour and dairy, and still warm when you walk in. Come grab one (or a box for the family) before they're gone!",
-          "visualIdea": "Close-up slow-motion shot of a fresh cinnamon bun tray coming out of the oven, then a hand pulling one bun apart to show the gooey swirl. Finish with a staff member smiling and holding the tray up to the camera.",
-          "hashtags": [
-            "#CalgaryBakery",
-            "#YYCEats",
-            "#CinnamonBuns",
-            "#SaturdayTreat",
-            "#YYCFoodie"
-          ],
-          "platform": "TikTok",
-          "postingWindow": "Saturday 7:00-9:00 AM"
-        },
-        {
-          "hook": "Cuteness overload, bakery edition 🥐",
-          "caption": "We can't help it, our croissants just get us every time. 🥐 Flaky, buttery and baked from scratch every morning, they're the cutest little way to start your day. Pair one with a latte and call it self-care. ☕",
-          "visualIdea": "Overhead photo of a row of golden croissants and pain au chocolat on a wooden board next to a latte with heart-shaped art, with a tiny handwritten sign reading 'Aww, hello!' in front of them.",
-          "hashtags": [
-            "#YYCCoffee",
-            "#CalgaryBakery",
-            "#CroissantLove",
-            "#YYCMornings",
-            "#BakedFresh"
-          ],
-          "platform": "Instagram",
-          "postingWindow": "Wednesday 7:00-8:30 AM"
-        },
-        {
-          "hook": "The sweetest little faces in the neighbourhood belong to... our galettes 🍑",
-          "caption": "Our seasonal fruit galettes are rustic, juicy and ridiculously adorable. 🍑 Made with local Alberta butter and baked fresh this morning. Bring the family by this weekend and pick a favourite to share (or not, we won't judge).",
-          "visualIdea": "Short video of a staff member gently placing a fruit galette on the counter, then a kid's hand pointing excitedly at it through the display case. Add a close-up of the flaky crust being sliced.",
-          "hashtags": [
-            "#YYCFamilies",
-            "#CalgaryBakery",
-            "#FruitGalette",
             "#YYCWeekend",
             "#SupportLocalYYC"
           ],
           "platform": "Facebook",
-          "postingWindow": "Friday 11:00 AM-1:00 PM"
+          "postingWindow": "Saturday 7:30-9:30 AM"
         }
       ],
-      "createdAt": "2026-11-26T03:33:17.805Z"
+      "createdAt": "2026-11-28T00:39:16.444Z"
+    },
+    "mXpvbLDEVgQ:e8e929582375:cfb452524213": {
+      "concepts": [
+        {
+          "hook": "Small luxuries, big flavour: the everyday kind. ✨",
+          "caption": "Luxury doesn't have to cost a fortune. Sometimes it's a buttery, flaky croissant and a fresh espresso before work. Baked from scratch this morning with Alberta flour and dairy. Treat yourself, you've earned it! 🥐☕",
+          "visualIdea": "Close-up slow shot of a warm croissant being pulled apart to show the layers, then a barista pouring an espresso beside it on the counter, with morning light through the shop window.",
+          "hashtags": [
+            "#YYCEats",
+            "#CalgaryBakery",
+            "#YYCCoffee",
+            "#CroissantLove",
+            "#SmallLuxuries"
+          ],
+          "platform": "Instagram",
+          "postingWindow": "Wednesday 7:00-9:00 AM"
+        },
+        {
+          "hook": "POV: your Saturday just got a major upgrade 🧁",
+          "caption": "Warm cinnamon buns, gooey in the middle and iced while you watch. Our Saturday special is the ultimate weekend indulgence for the whole family. Come say hi, grab a box and make the morning feel a little fancy. 💛",
+          "visualIdea": "Vertical video of a tray of fresh cinnamon buns coming out of the oven, a baker drizzling icing, then a family-style box being closed and handed across the counter with a smile.",
+          "hashtags": [
+            "#YYCFamilies",
+            "#CalgaryFoodie",
+            "#CinnamonBuns",
+            "#SaturdayTreat",
+            "#YYCBakery"
+          ],
+          "platform": "TikTok",
+          "postingWindow": "Saturday 8:00-10:00 AM"
+        },
+        {
+          "hook": "Fancy cake, neighbourhood prices? Let's talk. 🎂",
+          "caption": "Celebrating something special? Our custom cakes are made from scratch with local ingredients and a whole lot of care. Tell us your theme and we'll make it feel like a real occasion. DM us or pop in to chat flavours! 🎉",
+          "visualIdea": "Photo carousel: a decorator piping detail on a custom celebration cake, a finished cake on a stand, and a slice cut to show the layers inside the shop.",
+          "hashtags": [
+            "#YCCakes",
+            "#YYCBirthday",
+            "#CalgaryCustomCakes",
+            "#YYCEvents",
+            "#CelebrationCake"
+          ],
+          "platform": "Facebook",
+          "postingWindow": "Thursday 11:00 AM-1:00 PM"
+        }
+      ],
+      "createdAt": "2026-11-28T00:39:16.444Z"
+    },
+    "sxqm5f7SVYY:f76d23fcf9c6:cfb452524213": {
+      "concepts": [
+        {
+          "hook": "Your morning playlist has nothing on the sound of a fresh croissant crackling 🥐",
+          "caption": "Some songs get stuck in your head. Our croissants get stuck in your heart. Baked from scratch every morning with Alberta butter, they're best enjoyed warm with a flat white before work. Come say hi, we've got the good stuff ready at 7!",
+          "visualIdea": "Close-up video with sound on: hands pulling apart a warm croissant, flaky layers shattering, steam rising, then cut to a barista pouring a flat white at the counter.",
+          "hashtags": [
+            "#CalgaryEats",
+            "#YYCBakery",
+            "#CroissantLove",
+            "#YYCCoffee",
+            "#BakedFresh"
+          ],
+          "platform": "TikTok",
+          "postingWindow": "Wednesday 7:00-8:30 AM"
+        },
+        {
+          "hook": "Make room on your weekend playlist: Saturday cinnamon bun drop 🎶",
+          "caption": "Every great weekend needs a feel-good soundtrack, and ours smells like cinnamon and brown sugar. Our Saturday cinnamon buns are baked fresh and gone fast, so bring the family and grab yours early. Seats by the window are first come, first served!",
+          "visualIdea": "Reel of a tray of cinnamon buns coming out of the oven, a baker drizzling icing, then a family at a table each holding a bun, with the shop door sign flipped to open.",
+          "hashtags": [
+            "#YYCFamilyFun",
+            "#CalgaryWeekend",
+            "#CinnamonBuns",
+            "#YYCFoodie",
+            "#SupportLocalYYC"
+          ],
+          "platform": "Instagram",
+          "postingWindow": "Friday 4:00-6:00 PM"
+        },
+        {
+          "hook": "Our study-session playlist: sourdough, espresso and zero distractions 📚",
+          "caption": "Students, we see you grinding through finals. Pull up a chair, plug in, and let a gluten-free brownie and a hot drip coffee do the heavy lifting. Our day-old bread goes to a local food bank, so every loaf you love helps a neighbour too. 💛",
+          "visualIdea": "Cozy photo carousel: a laptop and notebook on a cafe table with a coffee and brownie, a stack of sourdough loaves on the shelf, and a staff member smiling behind the counter.",
+          "hashtags": [
+            "#CalgaryStudents",
+            "#YYCStudySpot",
+            "#YYCCafe",
+            "#GlutenFreeYYC",
+            "#LocalAlbertaFlour"
+          ],
+          "platform": "Facebook",
+          "postingWindow": "Sunday 9:00-11:00 AM"
+        }
+      ],
+      "createdAt": "2026-11-28T00:39:16.444Z"
+    },
+    "2ZPKLP80Wxk:7856d2d2509c:cfb452524213": {
+      "concepts": [
+        {
+          "hook": "Your morning just got a soundtrack... and it smells like butter 🥐",
+          "caption": "New music drops every week, and our ovens have their own hit single: fresh croissants at 7:00 sharp. Flaky, golden and baked from scratch with Alberta butter. Come grab one before work and let your day start on a high note 🎶☕",
+          "visualIdea": "Short vertical video: staff pulling a tray of croissants out of the oven, close-up of steam and flaky layers, then a hand lifting one next to a fresh espresso on the counter. Use natural shop sounds, no music from any video.",
+          "hashtags": [
+            "#CalgaryBakery",
+            "#YYCEats",
+            "#FreshCroissants",
+            "#RiseAndGrind",
+            "#YYCCoffee"
+          ],
+          "platform": "TikTok",
+          "postingWindow": "Wednesday 7:00-9:00 AM"
+        },
+        {
+          "hook": "Saturday has a beat, and it goes cinnamon, cinnamon, bun 🎵",
+          "caption": "Fresh music, fresh bakes! Our Saturday cinnamon buns are back, warm, gooey and made from scratch this morning. Bring the family, grab a table and make the weekend sweeter. Get here early because they dance out the door fast 😄",
+          "visualIdea": "Overhead photo or reel of a tray of cinnamon buns just out of the oven, icing being drizzled, then a family at a cafe table pulling one apart. Show the Saturday special chalkboard sign.",
+          "hashtags": [
+            "#YYCFamilies",
+            "#CalgaryBakery",
+            "#CinnamonBuns",
+            "#YYCWeekend",
+            "#SaturdayTreat"
+          ],
+          "platform": "Instagram",
+          "postingWindow": "Saturday 7:00-9:00 AM"
+        },
+        {
+          "hook": "Celebrations are better with a showstopper 🎂✨",
+          "caption": "When the party's the main event, the cake should steal the show. Our custom celebration cakes are baked from scratch with local Alberta flour and dairy, designed just for your big day. Message us to plan yours, and we'll bring the sweetness 🎉",
+          "visualIdea": "Time-lapse of a baker decorating a custom birthday cake at the bench, ending with a slow turn of the finished cake on a stand with candles lit, in the shop's warm light.",
+          "hashtags": [
+            "#YYCCakes",
+            "#CalgaryBakery",
+            "#CustomCakes",
+            "#YYCEvents",
+            "#BirthdayCake"
+          ],
+          "platform": "Facebook",
+          "postingWindow": "Thursday 11:00 AM-1:00 PM"
+        }
+      ],
+      "createdAt": "2026-11-28T00:39:16.444Z"
+    },
+    "WAncuIORqxA:b9f1548251ea:cfb452524213": {
+      "concepts": [
+        {
+          "hook": "Calgary, hockey season has our hearts (and our ovens) fired up 🏒",
+          "caption": "Game night plans? Start with a box of fresh croissants and pain au chocolat from us. Baked from scratch every morning with Alberta flour and dairy, so you can cheer louder on a full stomach. Pop in Tue-Sun from 7:00 to 16:00. 🥐",
+          "visualIdea": "Overhead shot of a tray of croissants and pain au chocolat on the counter beside a small hockey stick and a foam puck, with a staff member sliding the tray into a pastry box.",
+          "hashtags": [
+            "#YYCBakery",
+            "#CalgaryEats",
+            "#HockeyNight",
+            "#RiseAndGrindYYC",
+            "#FreshBaked"
+          ],
+          "platform": "Instagram",
+          "postingWindow": "Friday 3:00-5:00 PM"
+        },
+        {
+          "hook": "Hockey fans, we've got a hat trick for you 🎩",
+          "caption": "Three treats, one box: a flaky croissant, a gooey Saturday cinnamon bun and a gluten-free brownie. It's our playful take on the big-game snack lineup. Come by this weekend and score a box for the family! 🧡",
+          "visualIdea": "Quick 10-second video: a staff member counts '1, 2, 3' while placing a croissant, a cinnamon bun and a gluten-free brownie into a box, then closes the lid with a smile.",
+          "hashtags": [
+            "#YYCFoodie",
+            "#CalgaryBakery",
+            "#HatTrickTreats",
+            "#SaturdayTreat",
+            "#SupportLocalYYC"
+          ],
+          "platform": "TikTok",
+          "postingWindow": "Saturday 8:00-10:00 AM"
+        },
+        {
+          "hook": "Our favourite team sport? Sharing a warm cinnamon bun 🥶➡️🔥",
+          "caption": "Chilly Calgary weekends call for a cozy plan: grab the family, hit the neighbourhood and split a fresh cinnamon bun with a hot coffee or cocoa. Our Saturday special comes out of the oven warm and ready to pass around. Bring the whole squad! ☕",
+          "visualIdea": "Family-style shot of a table with a tray of cinnamon buns being pulled apart by several hands, with steaming coffee cups and a cozy winter scarf in frame inside the cafe.",
+          "hashtags": [
+            "#YYCFamilies",
+            "#CalgaryCafe",
+            "#CinnamonBunSaturday",
+            "#YYCWeekend",
+            "#NeighbourhoodBakery"
+          ],
+          "platform": "Facebook",
+          "postingWindow": "Friday 6:00-8:00 PM"
+        }
+      ],
+      "createdAt": "2026-11-28T00:39:16.444Z"
+    },
+    "D2N0J0tplyo:2c9e195befcc:cfb452524213": {
+      "concepts": [
+        {
+          "hook": "Plot twist: the pro is hiding behind the apron 🥐",
+          "caption": "You'd never guess who's been shaping your croissants since 5 AM. Our bakers are the real pros: three days of lamination, zero shortcuts, all made from scratch with Alberta butter. Come taste the difference at Rise & Grind. 🧈",
+          "visualIdea": "Short video of a baker in a plain apron rolling and folding croissant dough, then a slow reveal as they pull a tray of golden croissants from the oven and hold it up to the camera with a grin.",
+          "hashtags": [
+            "#YYCBakery",
+            "#YYCEats",
+            "#CalgaryFoodie",
+            "#Croissants",
+            "#BakedFresh"
+          ],
+          "platform": "TikTok",
+          "postingWindow": "Wednesday 7:00-9:00 AM"
+        },
+        {
+          "hook": "Ready, set, bake: 5 AM start, warm buns by 7 🏁",
+          "caption": "Our morning pit crew is fast, focused and covered in flour. Saturday means cinnamon buns, and they go quicker than you'd think! Swing by early and grab yours with a hot latte. ☕🌀",
+          "visualIdea": "Fast-cut video of the morning routine: mixing dough, rolling and slicing cinnamon buns, icing them, and the first customer picking one up at the counter as the doors open at 7:00.",
+          "hashtags": [
+            "#YYC",
+            "#CalgaryBakery",
+            "#CinnamonBuns",
+            "#SaturdayTreat",
+            "#YYCFamilies"
+          ],
+          "platform": "Instagram",
+          "postingWindow": "Friday 4:00-6:00 PM"
+        },
+        {
+          "hook": "Can you spot the sourdough? Our loaves are great at blending in 🍞",
+          "caption": "Some things look simple on the outside, but the real work happens underneath. Our sourdough takes time, patience and local Alberta flour for that crackly crust. Stop in, say hi and take a loaf home. Any day-old bread goes to our local food bank. 💛",
+          "visualIdea": "Photo or short reel of a shelf of sourdough loaves with one loaf wearing a tiny paper name tag, followed by a close-up of a baker slicing it to show the airy crumb.",
+          "hashtags": [
+            "#YYCBakery",
+            "#CalgaryLocal",
+            "#Sourdough",
+            "#ShopLocalYYC",
+            "#AlbertaMade"
+          ],
+          "platform": "Facebook",
+          "postingWindow": "Sunday 9:00-11:00 AM"
+        }
+      ],
+      "createdAt": "2026-11-28T00:39:16.444Z"
+    },
+    "H6-VW-HNA8M:f936d5f954e1:cfb452524213": {
+      "concepts": [
+        {
+          "hook": "Plot twist: the best seat in the house is the one by the pastry case 🥐",
+          "caption": "Some spots just feel right, and for us it's right next to the croissant tray. Flaky, buttery and baked fresh from scratch every morning with Alberta dairy. Come grab your favourite corner and a pain au chocolat before they're gone! ☕",
+          "visualIdea": "Short clip panning from the front door past the pastry case to a cozy window seat, ending on a croissant and a latte on the table. Use the real shop interior and morning light.",
+          "hashtags": [
+            "#YYCBakery",
+            "#CalgaryEats",
+            "#CroissantLove",
+            "#RiseAndGrindYYC"
+          ],
+          "platform": "Instagram",
+          "postingWindow": "Tuesday 7:30-9:00 AM"
+        },
+        {
+          "hook": "We designed our shop layout around one rule: you can't miss the cinnamon buns 😏",
+          "caption": "Saturday means cinnamon buns, and we put them right where you can see (and smell) them. Warm, gooey and made from scratch that very morning. Bring the whole family and pick your bun before the tray empties! 🧡",
+          "visualIdea": "Time-lapse of a staff member setting a fresh tray of cinnamon buns on the counter at opening, then a family walking in and pointing at them. Film at the real counter.",
+          "hashtags": [
+            "#YYCFamilyFun",
+            "#CinnamonBuns",
+            "#CalgaryBakery",
+            "#SaturdaySpecial",
+            "#YYCFoodie"
+          ],
+          "platform": "TikTok",
+          "postingWindow": "Friday 4:00-6:00 PM"
+        },
+        {
+          "hook": "Every door leads somewhere good. Ours leads to sourdough 🍞",
+          "caption": "Step through our door and the first thing you'll notice is the smell of fresh sourdough. Baked every morning with local Alberta flour, and any day-old loaves go to a local food bank so nothing goes to waste. Come say hi, neighbour! 👋",
+          "visualIdea": "Film from just inside the front door, opening it to reveal shelves of sourdough loaves, then a close-up of a baker slicing a loaf to show the crumb.",
+          "hashtags": [
+            "#YYCSourdough",
+            "#SupportLocalYYC",
+            "#CalgaryCafe",
+            "#LowWasteBaking"
+          ],
+          "platform": "Facebook",
+          "postingWindow": "Sunday 8:00-10:00 AM"
+        }
+      ],
+      "createdAt": "2026-11-28T00:39:16.444Z"
+    },
+    "-i3ICvBBzUY:297d2bc21fab:cfb452524213": {
+      "concepts": [
+        {
+          "hook": "Plot twist: the croissant was the real star all along 🥐",
+          "caption": "Pets aren't the only ones pulling off sneaky surprises. Every morning we tuck a little something extra into our pain au chocolat: a generous ribbon of chocolate in the middle. Swing by before work and see if you can spot the surprise. 🍫",
+          "visualIdea": "Close-up video of a hand tearing open a fresh pain au chocolat to reveal the chocolate centre, then a quick cut to a tray of just-baked croissants on the counter.",
+          "hashtags": [
+            "#CalgaryBakery",
+            "#YYCEats",
+            "#Croissants",
+            "#PainAuChocolat",
+            "#RiseAndGrindYYC"
+          ],
+          "platform": "TikTok",
+          "postingWindow": "Wednesday 7:00-9:00 AM"
+        },
+        {
+          "hook": "Guess who's innocent? Not the cinnamon buns. 😏",
+          "caption": "Saturday cinnamon buns are sneaky: one minute the tray is full, the next minute it's mysteriously empty. We bake them fresh from scratch with local Alberta flour and dairy, so come early and grab yours. Bring the family and make it a weekend tradition. 🧡",
+          "visualIdea": "Short clip of a tray of warm cinnamon buns on the counter, with one bun 'disappearing' between cuts as hands reach in. End on a staff member shrugging playfully with an empty tray.",
+          "hashtags": [
+            "#YYCFamilies",
+            "#CalgaryBakery",
+            "#CinnamonBuns",
+            "#SaturdayTreat",
+            "#YYCFoodie"
+          ],
+          "platform": "Instagram",
+          "postingWindow": "Saturday 7:00-9:00 AM"
+        },
+        {
+          "hook": "Tiny surprises make the best days ✨",
+          "caption": "Funny little moments of mischief and surprise are what make a day better, and we love adding our own. Our custom celebration cakes are made to order, so you can hide a favourite flavour or a fun design inside. Message us to plan your next birthday surprise. 🎂",
+          "visualIdea": "Photograph a custom celebration cake whole, then a slice being cut to reveal the layers inside, with a baker smiling in the background in the shop kitchen.",
+          "hashtags": [
+            "#CalgaryCakes",
+            "#YYCBirthday",
+            "#CustomCakes",
+            "#YYCBakery"
+          ],
+          "platform": "Facebook",
+          "postingWindow": "Thursday 12:00-2:00 PM"
+        }
+      ],
+      "createdAt": "2026-11-28T00:39:16.444Z"
+    },
+    "SdPF653IwWI:bcdb62bc3486:cfb452524213": {
+      "concepts": [
+        {
+          "hook": "Plot twist: the best part was the middle all along 🍫",
+          "caption": "Some surprises are worth biting into. Our pain au chocolat is flaky on the outside with a gooey chocolate centre, baked fresh from scratch this morning. Come find the good part with us, we open at 7! 🥐",
+          "visualIdea": "Close-up filmed from above: a hand tears a warm pain au chocolat in half to reveal the chocolate centre, then slowly pulls the halves apart. End on a shot of the tray on the counter with the shop's morning light.",
+          "hashtags": [
+            "#YYCEats",
+            "#CalgaryBakery",
+            "#PainAuChocolat",
+            "#FreshBaked",
+            "#YYCCoffee"
+          ],
+          "platform": "TikTok",
+          "postingWindow": "Wednesday 7:00-9:00 AM"
+        },
+        {
+          "hook": "Everyone has a favourite part. What's yours? 👀",
+          "caption": "Crispy crust, soft middle, or the gooey centre of a Saturday cinnamon bun? We don't judge, we just bake them. Tell us your favourite part in the comments, and swing by this Saturday while the buns are still warm! 😄",
+          "visualIdea": "Photo carousel: a sourdough loaf sliced open (crust vs. crumb), a gluten-free brownie cut to show the fudgy middle, and a cinnamon bun unrolled in the centre. Add simple text labels like 'Team Crust' and 'Team Middle' on each slide.",
+          "hashtags": [
+            "#CalgaryBakery",
+            "#YYCFoodie",
+            "#SourdoughLove",
+            "#CinnamonBunSaturday",
+            "#YYCLocal"
+          ],
+          "platform": "Instagram",
+          "postingWindow": "Friday 11:00 AM-1:00 PM"
+        },
+        {
+          "hook": "Our weekend snack-time reactions, but make it bakery 🥖",
+          "caption": "Watching families discover the cinnamon bun glaze is the highlight of our Saturday mornings. Pure joy, sticky fingers, zero regrets. Bring the whole crew by for buns and a coffee, made with local Alberta flour and dairy. 💛",
+          "visualIdea": "Film the Saturday cinnamon buns coming out of the oven, then a staff member handing one on a plate to a family at the counter (with their permission), capturing the first happy bite. Keep the camera at eye level for a warm, candid feel.",
+          "hashtags": [
+            "#YYCFamilies",
+            "#CalgaryEats",
+            "#SaturdayTreat",
+            "#SupportLocalYYC",
+            "#CinnamonBuns"
+          ],
+          "platform": "Facebook",
+          "postingWindow": "Saturday 8:00-10:00 AM"
+        }
+      ],
+      "createdAt": "2026-11-28T00:39:16.444Z"
     }
   }
 }
