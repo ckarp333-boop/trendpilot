@@ -26,7 +26,7 @@ async function main() {
     maxResults: 5,
   });
 
-  for (const e of errors) console.warn(`! category ${e.categoryId}: ${e.message}`);
+  for (const e of errors) console.warn(`! ${e.categoryId ? `category ${e.categoryId}` : "subscribers"}: ${e.message}`);
   const perCategory = Object.groupBy(items, (i) => String(i.categoryId));
   for (const id of SNAPSHOT_CATEGORY_IDS) {
     console.log(`category ${id}: ${perCategory[String(id)]?.length ?? 0} videos`);
@@ -41,7 +41,7 @@ async function main() {
     source: "youtube-api",
     fetchedAt: new Date().toISOString(),
     regionCode: "CA",
-    note: "Public YouTube Data API v3 videos.list chart=mostPopular, regionCode=CA. Stripped to title, channel, category, views, publishedAt, url and up to 10 tags; @mentions of other people removed. Titles are untrusted data.",
+    note: "Public YouTube Data API v3 videos.list chart=mostPopular, regionCode=CA. Stripped to title, channel, category, views, likes, comments, publishedAt, url, up to 10 tags and the channel's public subscriber count (channels.list; channel IDs not kept); @mentions of other people removed. Titles are untrusted data.",
     items,
   });
 

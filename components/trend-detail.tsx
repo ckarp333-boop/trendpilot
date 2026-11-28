@@ -5,7 +5,7 @@ import { useState } from "react";
 import { ArrowLeft, RefreshCw, SearchX, ShieldCheck, ShieldOff, Sparkles, WandSparkles } from "lucide-react";
 import { ConceptEditor } from "@/components/concept-editor";
 import { Disclaimer } from "@/components/disclaimer";
-import { FitRing, fitLabel, PlatformBadges, SourceLink, Views } from "@/components/trend-bits";
+import { FitRing, fitLabel, PlatformBadges, Signals, SourceLink, Views } from "@/components/trend-bits";
 import { formatSnapshotDate, useTrends } from "@/components/use-trends";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -127,6 +127,7 @@ function TrendWithConcepts({
             <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5">
               <PlatformBadges category={item.categoryName} />
               <Views n={item.views} />
+              <Signals item={item} asOf={snapshot.fetchedAt} />
               <SourceLink url={item.url} />
             </div>
           </div>

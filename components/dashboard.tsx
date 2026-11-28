@@ -10,6 +10,7 @@ import {
   LAYER_LABELS,
   LAYER_TONES,
   PlatformBadges,
+  Signals,
   SourceLink,
   Views,
 } from "@/components/trend-bits";
@@ -173,6 +174,7 @@ function TrendResults({ data }: { data: TrendsResponse }) {
                       <div className="relative z-10 flex flex-wrap items-center gap-x-3 gap-y-1.5">
                         <PlatformBadges category={item.categoryName} />
                         <Views n={item.views} />
+                        <Signals item={item} asOf={data.snapshot.fetchedAt} />
                         <SourceLink url={item.url} />
                       </div>
                     </div>

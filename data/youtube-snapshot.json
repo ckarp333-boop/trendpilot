@@ -1,8 +1,8 @@
 {
   "source": "youtube-api",
-  "fetchedAt": "2026-11-26T03:09:00.549Z",
+  "fetchedAt": "2026-11-28T00:20:56.571Z",
   "regionCode": "CA",
-  "note": "Public YouTube Data API v3 videos.list chart=mostPopular, regionCode=CA. Stripped to title, channel, category, views, publishedAt, url and up to 10 tags; @mentions of other people removed. Titles are untrusted data.",
+  "note": "Public YouTube Data API v3 videos.list chart=mostPopular, regionCode=CA. Stripped to title, channel, category, views, publishedAt, url and up to 10 tags; @mentions of other people removed. Titles are untrusted data. Counts (views, likes, comments, channel subscribers) refreshed 2026-11-28 via videos.list by ID and channels.list; titles and tags unchanged.",
   "items": [
     {
       "id": "TZrML7oGRI4",
@@ -10,10 +10,13 @@
       "channel": "bru3D",
       "categoryId": 24,
       "categoryName": "Entertainment",
-      "views": 16330184,
+      "views": 18834438,
       "publishedAt": "2026-11-24T07:46:36Z",
       "url": "https://www.youtube.com/watch?v=TZrML7oGRI4",
-      "tags": []
+      "tags": [],
+      "likes": 624876,
+      "comments": 2968,
+      "channelSubscribers": 104000
     },
     {
       "id": "GULTnfl8qWY",
@@ -21,10 +24,13 @@
       "channel": "Serena Neel",
       "categoryId": 22,
       "categoryName": "People & Blogs",
-      "views": 9826768,
+      "views": 13511454,
       "publishedAt": "2026-11-24T21:50:39Z",
       "url": "https://www.youtube.com/watch?v=GULTnfl8qWY",
-      "tags": []
+      "tags": [],
+      "likes": 675208,
+      "comments": 13167,
+      "channelSubscribers": 4720000
     },
     {
       "id": "tIo7IUyS9-4",
@@ -32,10 +38,13 @@
       "channel": "carshorts",
       "categoryId": 22,
       "categoryName": "People & Blogs",
-      "views": 2989792,
+      "views": 4719062,
       "publishedAt": "2026-11-24T22:00:12Z",
       "url": "https://www.youtube.com/watch?v=tIo7IUyS9-4",
-      "tags": []
+      "tags": [],
+      "likes": 134998,
+      "comments": 348,
+      "channelSubscribers": 308000
     },
     {
       "id": "88osQkdm_ak",
@@ -43,10 +52,13 @@
       "channel": "Glint",
       "categoryId": 2,
       "categoryName": "Autos & Vehicles",
-      "views": 14772108,
+      "views": 15661354,
       "publishedAt": "2026-11-23T14:30:26Z",
       "url": "https://www.youtube.com/watch?v=88osQkdm_ak",
-      "tags": []
+      "tags": [],
+      "likes": 319082,
+      "comments": 3601,
+      "channelSubscribers": 156000
     },
     {
       "id": "ZQnJl6rQs50",
@@ -54,10 +66,13 @@
       "channel": "Zack D. Films",
       "categoryId": 19,
       "categoryName": "Travel & Events",
-      "views": 4126020,
+      "views": 16878558,
       "publishedAt": "2026-11-25T15:30:01Z",
       "url": "https://www.youtube.com/watch?v=ZQnJl6rQs50",
-      "tags": []
+      "tags": [],
+      "likes": 547095,
+      "comments": 2664,
+      "channelSubscribers": 29900000
     },
     {
       "id": "Wb8Tq_HD4E8",
@@ -65,13 +80,16 @@
       "channel": "Marvel Entertainment",
       "categoryId": 24,
       "categoryName": "Entertainment",
-      "views": 54350784,
+      "views": 66830253,
       "publishedAt": "2026-11-23T14:00:01Z",
       "url": "https://www.youtube.com/watch?v=Wb8Tq_HD4E8",
       "tags": [
         "marvel",
         "comics"
-      ]
+      ],
+      "likes": 1699719,
+      "comments": 97323,
+      "channelSubscribers": 24300000
     },
     {
       "id": "7o9Al07wa6M",
@@ -79,10 +97,12 @@
       "channel": "Stewie",
       "categoryId": 24,
       "categoryName": "Entertainment",
-      "views": 20478503,
+      "views": 21901276,
       "publishedAt": "2026-11-24T01:30:01Z",
       "url": "https://www.youtube.com/watch?v=7o9Al07wa6M",
-      "tags": []
+      "tags": [],
+      "comments": 8366,
+      "channelSubscribers": 151000
     },
     {
       "id": "uK_8IXmGhO0",
@@ -90,7 +110,7 @@
       "channel": "The Love Editorial Office",
       "categoryId": 1,
       "categoryName": "Film & Animation",
-      "views": 9673808,
+      "views": 11689978,
       "publishedAt": "2026-11-24T02:03:07Z",
       "url": "https://www.youtube.com/watch?v=uK_8IXmGhO0",
       "tags": [
@@ -100,7 +120,10 @@
         "movieclips",
         "shorts",
         "A Home of Our Own"
-      ]
+      ],
+      "likes": 392034,
+      "comments": 3551,
+      "channelSubscribers": 30300
     },
     {
       "id": "W_cuX6leGak",
@@ -108,10 +131,13 @@
       "channel": "No Tatts",
       "categoryId": 24,
       "categoryName": "Entertainment",
-      "views": 25274765,
+      "views": 36453910,
       "publishedAt": "2026-11-24T17:00:30Z",
       "url": "https://www.youtube.com/watch?v=W_cuX6leGak",
-      "tags": []
+      "tags": [],
+      "likes": 641077,
+      "comments": 9584,
+      "channelSubscribers": 288000
     },
     {
       "id": "aCqDrqDTfoQ",
@@ -119,10 +145,13 @@
       "channel": "JJ_EditZ",
       "categoryId": 22,
       "categoryName": "People & Blogs",
-      "views": 16809298,
+      "views": 18609536,
       "publishedAt": "2026-11-22T11:16:13Z",
       "url": "https://www.youtube.com/watch?v=aCqDrqDTfoQ",
-      "tags": []
+      "tags": [],
+      "likes": 872120,
+      "comments": 1665,
+      "channelSubscribers": 228000
     },
     {
       "id": "TXYkiIRMzH8",
@@ -130,10 +159,13 @@
       "channel": "SpinFactz",
       "categoryId": 20,
       "categoryName": "Gaming",
-      "views": 69127180,
+      "views": 79592782,
       "publishedAt": "2026-11-22T13:00:23Z",
       "url": "https://www.youtube.com/watch?v=TXYkiIRMzH8",
-      "tags": []
+      "tags": [],
+      "likes": 1159368,
+      "comments": 6558,
+      "channelSubscribers": 42200
     },
     {
       "id": "jU6cUtK_hGk",
@@ -141,10 +173,13 @@
       "channel": "Cadel and Mia",
       "categoryId": 24,
       "categoryName": "Entertainment",
-      "views": 76202561,
+      "views": 94286752,
       "publishedAt": "2026-11-25T09:45:19Z",
       "url": "https://www.youtube.com/watch?v=jU6cUtK_hGk",
-      "tags": []
+      "tags": [],
+      "likes": 396340,
+      "comments": 966,
+      "channelSubscribers": 33000000
     },
     {
       "id": "CV0mkRyaVtg",
@@ -152,10 +187,13 @@
       "channel": "Tom Cuts",
       "categoryId": 22,
       "categoryName": "People & Blogs",
-      "views": 6237826,
+      "views": 10334097,
       "publishedAt": "2026-11-25T02:15:18Z",
       "url": "https://www.youtube.com/watch?v=CV0mkRyaVtg",
-      "tags": []
+      "tags": [],
+      "likes": 331537,
+      "comments": 1408,
+      "channelSubscribers": 14500
     },
     {
       "id": "1nSozFynnZ0",
@@ -163,10 +201,13 @@
       "channel": "Archangel Riderr",
       "categoryId": 22,
       "categoryName": "People & Blogs",
-      "views": 303125,
+      "views": 1814000,
       "publishedAt": "2026-11-25T19:15:37Z",
       "url": "https://www.youtube.com/watch?v=1nSozFynnZ0",
-      "tags": []
+      "tags": [],
+      "likes": 61657,
+      "comments": 636,
+      "channelSubscribers": 241000
     },
     {
       "id": "sP2RHlT9hUc",
@@ -174,10 +215,13 @@
       "channel": "Serena Neel",
       "categoryId": 22,
       "categoryName": "People & Blogs",
-      "views": 1891958,
+      "views": 2270293,
       "publishedAt": "2026-11-21T16:00:39Z",
       "url": "https://www.youtube.com/watch?v=sP2RHlT9hUc",
-      "tags": []
+      "tags": [],
+      "likes": 38340,
+      "comments": 1818,
+      "channelSubscribers": 4720000
     },
     {
       "id": "EetbXDtNS0g",
@@ -185,7 +229,7 @@
       "channel": "TheSorryGirls",
       "categoryId": 26,
       "categoryName": "Howto & Style",
-      "views": 180533,
+      "views": 234840,
       "publishedAt": "2026-11-24T20:00:16Z",
       "url": "https://www.youtube.com/watch?v=EetbXDtNS0g",
       "tags": [
@@ -199,7 +243,10 @@
         "makeover",
         "do it yourself",
         "home design"
-      ]
+      ],
+      "likes": 8576,
+      "comments": 393,
+      "channelSubscribers": 2340000
     },
     {
       "id": "prqQqjwcH-8",
@@ -207,10 +254,13 @@
       "channel": "ThoughTaken",
       "categoryId": 2,
       "categoryName": "Autos & Vehicles",
-      "views": 1911123,
+      "views": 2010052,
       "publishedAt": "2026-11-19T21:02:20Z",
       "url": "https://www.youtube.com/watch?v=prqQqjwcH-8",
-      "tags": []
+      "tags": [],
+      "likes": 58122,
+      "comments": 699,
+      "channelSubscribers": 1580000
     },
     {
       "id": "8_ex8qOVfN4",
@@ -218,7 +268,7 @@
       "channel": "Squirmy and Grubs",
       "categoryId": 22,
       "categoryName": "People & Blogs",
-      "views": 106184,
+      "views": 421564,
       "publishedAt": "2026-11-25T22:04:56Z",
       "url": "https://www.youtube.com/watch?v=8_ex8qOVfN4",
       "tags": [
@@ -232,7 +282,10 @@
         "relationship vlog",
         "interabled relationship",
         "shane and hannah"
-      ]
+      ],
+      "likes": 10230,
+      "comments": 583,
+      "channelSubscribers": 1870000
     },
     {
       "id": "zdz8swOQUqw",
@@ -240,7 +293,7 @@
       "channel": "SHUBH",
       "categoryId": 10,
       "categoryName": "Music",
-      "views": 15400453,
+      "views": 16664374,
       "publishedAt": "2026-11-13T05:00:22Z",
       "url": "https://www.youtube.com/watch?v=zdz8swOQUqw",
       "tags": [
@@ -254,7 +307,10 @@
         "bapu nu leke aa shubh",
         "Ethe hi aa beeba mai ta gya hi ni",
         "loki kehnde comeback ho gya"
-      ]
+      ],
+      "likes": 252699,
+      "comments": 10639,
+      "channelSubscribers": 7800000
     },
     {
       "id": "LJC7mgjp5FQ",
@@ -262,7 +318,7 @@
       "channel": "Taylor Swift",
       "categoryId": 10,
       "categoryName": "Music",
-      "views": 7001043,
+      "views": 7508877,
       "publishedAt": "2026-11-19T11:00:19Z",
       "url": "https://www.youtube.com/watch?v=LJC7mgjp5FQ",
       "tags": [
@@ -275,7 +331,10 @@
         "taylor swift i knew it i knew your",
         "taylor swift our song",
         "i knew it i knew you live cmas"
-      ]
+      ],
+      "likes": 137692,
+      "comments": 5039,
+      "channelSubscribers": 63500000
     },
     {
       "id": "tz8nh-16JWg",
@@ -283,7 +342,7 @@
       "channel": "Ranjit Bawa Music",
       "categoryId": 10,
       "categoryName": "Music",
-      "views": 10275625,
+      "views": 10836146,
       "publishedAt": "2026-11-20T05:04:50Z",
       "url": "https://www.youtube.com/watch?v=tz8nh-16JWg",
       "tags": [
@@ -297,7 +356,10 @@
         "ranjit bawa video song",
         "ranjit",
         "bawa"
-      ]
+      ],
+      "likes": 75277,
+      "comments": 1058,
+      "channelSubscribers": 2320000
     },
     {
       "id": "FTQVONPGlus",
@@ -305,14 +367,17 @@
       "channel": "Travis Scott - Topic",
       "categoryId": 10,
       "categoryName": "Music",
-      "views": 1495950,
+      "views": 2744979,
       "publishedAt": "2026-11-23T14:04:28Z",
       "url": "https://www.youtube.com/watch?v=FTQVONPGlus",
       "tags": [
         "Travis Scott",
         "Grand Theft Auto VI",
         "Burn This Shit Down (from GTAVI: The Album)"
-      ]
+      ],
+      "likes": 90354,
+      "comments": 1372,
+      "channelSubscribers": 84300
     },
     {
       "id": "hX9S94XsySk",
@@ -320,7 +385,7 @@
       "channel": "The Weeknd",
       "categoryId": 10,
       "categoryName": "Music",
-      "views": 28256467,
+      "views": 30230497,
       "publishedAt": "2026-11-12T16:00:33Z",
       "url": "https://www.youtube.com/watch?v=hX9S94XsySk",
       "tags": [
@@ -333,7 +398,10 @@
         "the weeknd new video",
         "the weeknd hong kong",
         "the weeknd new song"
-      ]
+      ],
+      "likes": 385509,
+      "comments": 15197,
+      "channelSubscribers": 40400000
     },
     {
       "id": "WAncuIORqxA",
@@ -341,7 +409,7 @@
       "channel": "NHL",
       "categoryId": 17,
       "categoryName": "Sports",
-      "views": 1128551,
+      "views": 1398748,
       "publishedAt": "2026-11-24T03:15:07Z",
       "url": "https://www.youtube.com/watch?v=WAncuIORqxA",
       "tags": [
@@ -355,7 +423,10 @@
         "nhl hockey games 2026",
         "ice hockey",
         "corey perry funny moments"
-      ]
+      ],
+      "likes": 8420,
+      "comments": 173,
+      "channelSubscribers": 3090000
     },
     {
       "id": "rWhXk94GwU0",
@@ -363,7 +434,7 @@
       "channel": "GD's Highlights",
       "categoryId": 17,
       "categoryName": "Sports",
-      "views": 9647613,
+      "views": 17980493,
       "publishedAt": "2026-11-24T16:01:17Z",
       "url": "https://www.youtube.com/watch?v=rWhXk94GwU0",
       "tags": [
@@ -377,7 +448,10 @@
         "kobe",
         "kobe and fans",
         "nba fans"
-      ]
+      ],
+      "likes": 277527,
+      "comments": 1941,
+      "channelSubscribers": 8070000
     },
     {
       "id": "hScVhS3BOes",
@@ -385,10 +459,13 @@
       "channel": "Underground Bullets",
       "categoryId": 22,
       "categoryName": "People & Blogs",
-      "views": 2624614,
+      "views": 2869897,
       "publishedAt": "2026-11-21T17:12:45Z",
       "url": "https://www.youtube.com/watch?v=hScVhS3BOes",
-      "tags": []
+      "tags": [],
+      "likes": 45785,
+      "comments": 240,
+      "channelSubscribers": 204000
     },
     {
       "id": "Z1mHknI0kP8",
@@ -396,10 +473,13 @@
       "channel": "Gino Hard",
       "categoryId": 17,
       "categoryName": "Sports",
-      "views": 524376,
+      "views": 575347,
       "publishedAt": "2026-11-24T02:33:07Z",
       "url": "https://www.youtube.com/watch?v=Z1mHknI0kP8",
-      "tags": []
+      "tags": [],
+      "likes": 5516,
+      "comments": 1064,
+      "channelSubscribers": 20600
     },
     {
       "id": "wJ-A54rpHr0",
@@ -407,7 +487,7 @@
       "channel": "GOATZVERSE",
       "categoryId": 24,
       "categoryName": "Entertainment",
-      "views": 64212294,
+      "views": 116504571,
       "publishedAt": "2026-11-25T11:48:04Z",
       "url": "https://www.youtube.com/watch?v=wJ-A54rpHr0",
       "tags": [
@@ -420,7 +500,9 @@
         "football funny games",
         "football entertaining shorts",
         "football players funny parody"
-      ]
+      ],
+      "comments": 1754,
+      "channelSubscribers": 473000
     },
     {
       "id": "I4OnpwkzYF4",
@@ -428,10 +510,13 @@
       "channel": "Thomas Mulligan",
       "categoryId": 28,
       "categoryName": "Science & Technology",
-      "views": 7759939,
+      "views": 8993079,
       "publishedAt": "2026-11-23T21:30:17Z",
       "url": "https://www.youtube.com/watch?v=I4OnpwkzYF4",
-      "tags": []
+      "tags": [],
+      "likes": 293538,
+      "comments": 5196,
+      "channelSubscribers": 2210000
     },
     {
       "id": "4hZCdH0aDVA",
@@ -439,10 +524,13 @@
       "channel": "Dogosolo worldz",
       "categoryId": 22,
       "categoryName": "People & Blogs",
-      "views": 20789301,
+      "views": 22235723,
       "publishedAt": "2026-11-22T00:28:12Z",
       "url": "https://www.youtube.com/watch?v=4hZCdH0aDVA",
-      "tags": []
+      "tags": [],
+      "likes": 284473,
+      "comments": 1501,
+      "channelSubscribers": 21100
     },
     {
       "id": "pUKiRbwUczU",
@@ -450,10 +538,13 @@
       "channel": "SidelineDry",
       "categoryId": 22,
       "categoryName": "People & Blogs",
-      "views": 169299172,
+      "views": 177353660,
       "publishedAt": "2026-11-16T05:10:53Z",
       "url": "https://www.youtube.com/watch?v=pUKiRbwUczU",
-      "tags": []
+      "tags": [],
+      "likes": 680076,
+      "comments": 3398,
+      "channelSubscribers": 77700
     },
     {
       "id": "fhB5a9iUpQY",
@@ -461,10 +552,13 @@
       "channel": "Zack D. Films",
       "categoryId": 19,
       "categoryName": "Travel & Events",
-      "views": 7217303,
+      "views": 9479077,
       "publishedAt": "2026-11-24T20:30:20Z",
       "url": "https://www.youtube.com/watch?v=fhB5a9iUpQY",
-      "tags": []
+      "tags": [],
+      "likes": 298116,
+      "comments": 1819,
+      "channelSubscribers": 29900000
     },
     {
       "id": "iX1bxE0Mel4",
@@ -472,7 +566,7 @@
       "channel": "CBC News",
       "categoryId": 25,
       "categoryName": "News & Politics",
-      "views": 357213,
+      "views": 482138,
       "publishedAt": "2026-11-24T23:03:28Z",
       "url": "https://www.youtube.com/watch?v=iX1bxE0Mel4",
       "tags": [
@@ -486,7 +580,9 @@
         "About That",
         "CBC News",
         "cbc"
-      ]
+      ],
+      "likes": 8847,
+      "channelSubscribers": 4790000
     },
     {
       "id": "iv2W9WnEuXo",
@@ -494,7 +590,7 @@
       "channel": "MS NOW",
       "categoryId": 25,
       "categoryName": "News & Politics",
-      "views": 1279494,
+      "views": 1500367,
       "publishedAt": "2026-11-24T01:38:02Z",
       "url": "https://www.youtube.com/watch?v=iv2W9WnEuXo",
       "tags": [
@@ -503,7 +599,10 @@
         "MS NOW",
         "msnow",
         "msnbc"
-      ]
+      ],
+      "likes": 76073,
+      "comments": 2351,
+      "channelSubscribers": 10100000
     },
     {
       "id": "7fZDoKy1wBg",
@@ -511,7 +610,7 @@
       "channel": "CTV News",
       "categoryId": 25,
       "categoryName": "News & Politics",
-      "views": 559827,
+      "views": 585150,
       "publishedAt": "2026-11-17T17:14:58Z",
       "url": "https://www.youtube.com/watch?v=7fZDoKy1wBg",
       "tags": [
@@ -520,7 +619,10 @@
         "CTV News Ottawa",
         "Dollarama",
         "Loblaws"
-      ]
+      ],
+      "likes": 11414,
+      "comments": 1634,
+      "channelSubscribers": 2440000
     },
     {
       "id": "_wN_Cw2V8SU",
@@ -528,7 +630,7 @@
       "channel": "The Daily Show",
       "categoryId": 23,
       "categoryName": "Comedy",
-      "views": 2408449,
+      "views": 2620460,
       "publishedAt": "2026-11-21T14:00:38Z",
       "url": "https://www.youtube.com/watch?v=_wN_Cw2V8SU",
       "tags": [
@@ -542,7 +644,10 @@
         "funny clips",
         "daily show",
         "news"
-      ]
+      ],
+      "likes": 25617,
+      "comments": 1058,
+      "channelSubscribers": 14200000
     },
     {
       "id": "w1b0jcYJzcI",
@@ -550,7 +655,7 @@
       "channel": "CNN-News18",
       "categoryId": 25,
       "categoryName": "News & Politics",
-      "views": 1335966,
+      "views": 1635139,
       "publishedAt": "2026-11-23T21:30:08Z",
       "url": "https://www.youtube.com/watch?v=w1b0jcYJzcI",
       "tags": [
@@ -564,7 +669,10 @@
         "trump russia epstein",
         "sen sheldon whitehouse",
         "sheldon whitehouse senate floor speech"
-      ]
+      ],
+      "likes": 34994,
+      "comments": 3710,
+      "channelSubscribers": 11000000
     }
   ]
 }
