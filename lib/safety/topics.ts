@@ -6,7 +6,14 @@
 
 const STOPWORDS = new Set(["a", "an", "the", "of", "about", "any", "all", "other", "etc"]);
 
+/** Words that end in "s" but aren't plurals: stripping the s would turn "news" into "new". */
+const NOT_PLURAL = new Set([
+  "news", "lens", "series", "species", "chaos", "bias", "gas", "diabetes", "herpes", "measles",
+  "mumps", "rabies", "scabies", "thanks", "always", "perhaps", "canvas", "atlas", "christmas",
+]);
+
 function singular(word: string): string {
+  if (NOT_PLURAL.has(word.toLowerCase())) return word;
   if (/ies$/i.test(word)) return word.slice(0, -3) + "y";
   if (/(ss|us|is)$/i.test(word)) return word;
   if (/s$/i.test(word) && word.length > 3) return word.slice(0, -1);

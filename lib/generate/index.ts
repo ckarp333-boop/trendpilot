@@ -4,13 +4,33 @@ import type { BrandProfile } from "../profile/schema";
 import { getSafeTrends, type KeptTrend, type SafeTrends } from "../safety";
 import { loadConceptCache, loadFitCache } from "./cache";
 import { generateConcepts, type ConceptResult } from "./concepts";
-import { scoreTrends } from "./fit";
+import { fitCacheKey, scoreTrends, type ScoredResult } from "./fit";
 import type { FitScore } from "./schemas";
 
 export type { Concept, FitScore } from "./schemas";
 
 function liveCaller() {
   return process.env.ANTHROPIC_API_KEY ? callStructured : undefined;
+}
+
+/**
+ * Fit scores from live LLM calls, kept for the life of this server instance, keyed by profile +
+ * trend set. An edited profile is scored once, not again on every dashboard and trend page.
+ */
+const liveFitScores = new Map<string, FitScore[]>();
+const MAX_LIVE_FIT_ENTRIES = 50;
+
+async function scoreWithMemory(items: KeptTrend["item"][], profile: BrandProfile): Promise<ScoredResult> {
+  const key = fitCacheKey(items, profile);
+  const remembered = liveFitScores.get(key);
+  if (remembered) return { scores: new Map(remembered.map((s) => [s.trendId, s])), source: "cache" };
+
+  const fit = await scoreTrends(items, profile, { cache: loadFitCache(), caller: liveCaller() });
+  if (fit.source === "llm") {
+    if (liveFitScores.size >= MAX_LIVE_FIT_ENTRIES) liveFitScores.clear();
+    liveFitScores.set(key, [...fit.scores.values()]);
+  }
+  return fit;
 }
 
 export interface ScoredTrend extends KeptTrend {
@@ -26,10 +46,9 @@ export interface ScoredTrends extends Omit<SafeTrends, "kept"> {
 /** Safe trends for this profile, ranked by fit score (unscored trends last, by views). */
 export async function getScoredTrends(profile: BrandProfile): Promise<ScoredTrends> {
   const safe = await getSafeTrends(profile.topicsToAvoid);
-  const fit = await scoreTrends(
+  const fit = await scoreWithMemory(
     safe.kept.map((k) => k.item),
     profile,
-    { cache: loadFitCache(), caller: liveCaller() },
   );
   const kept = safe.kept
     .map((k) => ({ ...k, fit: fit.scores.get(k.item.id) }))

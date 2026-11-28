@@ -157,7 +157,7 @@ After refreshing the snapshot, run `cache:safety` and then `cache:generate` so t
 
 ## Test evidence
 
-- **160 unit tests** (Vitest): safety layers, engagement signals, prompt injection, schema validation, retries and timeouts with a mocked LLM, API error handling, snapshot loading, metrics.
+- **177 unit tests** (Vitest): safety layers, engagement signals, prompt injection, schema validation, retries and timeouts with a mocked LLM, API error handling, snapshot loading, metrics.
 - **8 end-to-end tests** (Playwright), including the full **profile → trend → generate → save → calendar** flow, run with the AI key blanked to prove the demo works from cached results.
 - **Live LLM runs:** the safety filter kept 12 of 38 trending videos and caught **both prompt-injection probes**. Fit scores ranged from 8 to 62.
 

@@ -162,11 +162,12 @@ function TrendWithConcepts({
             <h2 className="text-xl font-semibold">Post ideas for {profile.businessName}</h2>
             <p className="text-sm text-muted-foreground">
               {gen.status === "ready"
-                ? `Edit anything, then approve the ones you like. Nothing is posted automatically.${gen.source === "cache" ? " (Saved ideas for this profile.)" : ""}`
+                ? `Edit anything, then approve the ones you like. Nothing is posted automatically.${gen.source === "cache" ? " These are the saved ideas for the demo profile; edit them freely." : ""}`
                 : "Three original ideas based on this trend's theme, in your brand's voice."}
             </p>
           </div>
-          {gen.status !== "loading" && (
+          {/* Saved ideas come from the cache, so "Generate again" would only return the same three. */}
+          {gen.status !== "loading" && !(gen.status === "ready" && gen.source === "cache") && (
             <Button size="lg" onClick={generate} variant={gen.status === "ready" ? "outline" : "default"}>
               {gen.status === "ready" ? (
                 <RefreshCw aria-hidden className="size-4" />

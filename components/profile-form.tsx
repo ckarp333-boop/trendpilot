@@ -95,13 +95,14 @@ function ProfileEditor() {
       setStatus({ kind: "error", text: `${field}: ${issue.message}` });
       return;
     }
-    if (sameProfile(parsed.data, DEMO_PROFILE)) {
-      reset(); // identical to the demo: keep using the demo (and its saved AI results)
-    } else {
-      save(parsed.data);
-    }
+    // Identical to the demo: keep using the demo (and its saved AI results).
+    const stored = sameProfile(parsed.data, DEMO_PROFILE) ? reset() : save(parsed.data);
     setDraft(toDraft(parsed.data));
-    setStatus({ kind: "ok", text: "Profile saved." });
+    setStatus(
+      stored
+        ? { kind: "ok", text: "Profile saved." }
+        : { kind: "error", text: "Saved for this browser tab only: your browser's storage is full or blocked." },
+    );
   }
 
   function onReset() {
