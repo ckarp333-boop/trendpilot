@@ -61,6 +61,8 @@ export interface SafetyChecker {
 
 export interface CheckerOptions {
   cache?: SafetyCache;
+  /** Verdicts from earlier live LLM calls. Pass a long-lived map to share them across requests. */
+  memo?: Map<string, SourcedVerdict>;
   /** Live LLM caller; omit to run cache-only (missing entries are marked unsafe). */
   caller?: StructuredCaller;
 }
@@ -69,9 +71,8 @@ export interface CheckerOptions {
  * Layer 4: LLM safety check. Uses cached verdicts first. On a cache miss it calls the LLM
  * if a caller is given. Any failure, missing verdict or invalid output means UNSAFE.
  */
-export function createSafetyChecker({ cache, caller }: CheckerOptions): SafetyChecker {
+export function createSafetyChecker({ cache, caller, memo = new Map() }: CheckerOptions): SafetyChecker {
   const entries = cache?.promptVersion === SAFETY_PROMPT_VERSION ? cache.entries : {};
-  const memo = new Map<string, SourcedVerdict>();
 
   return {
     async check(item) {

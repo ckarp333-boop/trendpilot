@@ -12,7 +12,10 @@ export const METRICS = [
 
 export type MetricKey = (typeof METRICS)[number]["key"];
 
-const count = z.int().min(0).max(1_000_000_000);
+/** Largest count the owner can enter. parseCount clamps to it, so stored state always validates. */
+export const MAX_COUNT = 1_000_000_000;
+
+const count = z.int().min(0).max(MAX_COUNT);
 
 export const PostMetricsSchema = z.object({
   timeSavedMinutes: count.optional(),
@@ -25,7 +28,9 @@ export type EnteredField = keyof PostMetrics;
 
 export const MetricsStateSchema = z.object({
   enabled: z.record(z.string(), z.boolean()),
-  values: z.record(z.string(), PostMetricsSchema),
+  // One bad entry (hand-edited storage, older app version) drops only that post's values,
+  // not every metric the owner has entered.
+  values: z.record(z.string(), PostMetricsSchema.catch({})),
 });
 export type MetricsState = z.infer<typeof MetricsStateSchema>;
 
@@ -34,13 +39,13 @@ export const DEFAULT_METRICS_STATE: MetricsState = {
   values: {},
 };
 
-/** Owner input -> a whole non-negative number, or undefined for blank/invalid. */
+/** Owner input -> a whole number from 0 to MAX_COUNT, or undefined for blank/invalid. */
 export function parseCount(input: string): number | undefined {
   const t = input.trim().replace(/,/g, "");
   if (t === "") return undefined;
   const n = Number(t);
   if (!Number.isFinite(n) || n < 0) return undefined;
-  return Math.round(n);
+  return Math.min(Math.round(n), MAX_COUNT);
 }
 
 export function speedHours(entry: CalendarEntry): number | null {

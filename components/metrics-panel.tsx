@@ -20,6 +20,7 @@ import {
   computeTotals,
   formatHours,
   METRICS,
+  MAX_COUNT,
   parseCount,
   speedHours,
   type EnteredField,
@@ -257,6 +258,7 @@ function PostRow({
               type="number"
               inputMode="numeric"
               min={0}
+              max={MAX_COUNT}
               step={1}
               className="w-28"
               aria-label={`${m.label} for "${entry.concept.hook}"`}

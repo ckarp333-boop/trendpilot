@@ -47,7 +47,8 @@ async function main() {
       views: f.views,
       likes: f.likes,
       comments: f.comments,
-      channelSubscribers: f.channelSubscribers,
+      // If the channels lookup failed, keep the counts we already had rather than erasing them.
+      channelSubscribers: error ? (f.channelSubscribers ?? old.channelSubscribers) : f.channelSubscribers,
     };
   });
 

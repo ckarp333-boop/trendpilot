@@ -56,8 +56,10 @@ export function ConceptEditor({
       setError("Pick a date for this post.");
       return;
     }
-    add({ ...trend, concept: parsed.data, scheduledDate: date });
-    setError(null);
+    const { stored } = add({ ...trend, concept: parsed.data, scheduledDate: date });
+    setError(
+      stored ? null : "Saved for this browser tab only: your browser's storage is full or blocked, so it will be lost when you close the tab.",
+    );
     setSaved(true);
   }
 

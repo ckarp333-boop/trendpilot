@@ -17,6 +17,7 @@ export function useProfile() {
     /** The profile to send to the API: undefined means "use the server's demo profile". */
     apiProfile: saved ?? undefined,
     isCustom: saved !== null,
+    /** Returns false if the browser couldn't store it (kept for this tab only). */
     save: (p: BrandProfile) => profileStore.write(p),
     reset: () => profileStore.write(null),
   };

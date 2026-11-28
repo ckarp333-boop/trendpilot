@@ -5,7 +5,8 @@ import type { z } from "zod";
 
 export interface LocalStore<T> {
   read(): T;
-  write(value: T | null): void;
+  /** Returns false if the browser refused to store it (kept for this tab only). */
+  write(value: T | null): boolean;
   subscribe(listener: () => void): () => void;
   fallback: T;
 }
@@ -17,10 +18,14 @@ export interface LocalStore<T> {
  */
 export function createLocalStore<T>(key: string, schema: z.ZodType<T>, fallback: T): LocalStore<T> {
   let memoryRaw: string | null = null;
+  // Once a write fails (storage full or blocked), memory is the source of truth for this tab.
+  // Otherwise read() would keep returning the stale stored value and the save would vanish.
+  let useMemory = false;
   let cache: { raw: string | null; value: T } | undefined;
   const listeners = new Set<() => void>();
 
   function readRaw(): string | null {
+    if (useMemory) return memoryRaw;
     try {
       return window.localStorage.getItem(key);
     } catch {
@@ -48,19 +53,23 @@ export function createLocalStore<T>(key: string, schema: z.ZodType<T>, fallback:
     write(value) {
       const raw = value === null ? null : JSON.stringify(value);
       memoryRaw = raw;
+      let stored = true;
       try {
         if (raw === null) window.localStorage.removeItem(key);
         else window.localStorage.setItem(key, raw);
       } catch {
-        // Storage unavailable: memoryRaw keeps the value for this tab.
+        // Storage full or unavailable: memoryRaw keeps the value for this tab.
+        stored = false;
+        useMemory = true;
       }
       cache = undefined;
       listeners.forEach((l) => l());
+      return stored;
     },
     subscribe(listener) {
       listeners.add(listener);
       const onStorage = (e: StorageEvent) => {
-        if (e.key === key) {
+        if (e.key === key && !useMemory) {
           cache = undefined;
           listener();
         }

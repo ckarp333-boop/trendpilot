@@ -15,6 +15,16 @@ export interface TrendSource {
   warning?: string;
 }
 
+/** How long one live fetch is reused. Keeps the dashboard, trend page and generate call on the same list. */
+export const LIVE_TTL_MS = 10 * 60_000;
+
+let live: { at: number; promise: Promise<TrendSource> } | undefined;
+
+/** Forget the cached live fetch (tests). */
+export function resetLiveCache(): void {
+  live = undefined;
+}
+
 export function isDemoMode(): boolean {
   return process.env.DEMO_MODE !== "false";
 }
@@ -39,6 +49,23 @@ export async function getTrendItems(): Promise<TrendSource> {
     return { ...fromSnapshot, warning: "YOUTUBE_API_KEY is not set; showing the saved snapshot." };
   }
 
+  // Reuse one live fetch for LIVE_TTL_MS (per server instance), so every page view doesn't cost
+  // quota and a trend picked on the dashboard is still in the list when /api/generate runs.
+  // Concurrent requests share the in-flight promise.
+  const now = Date.now();
+  if (!live || now - live.at > LIVE_TTL_MS) {
+    const promise = fetchLive(apiKey, fromSnapshot);
+    live = { at: now, promise };
+    // Don't keep a fallback result or a failure: try YouTube again on the next request.
+    const forget = () => {
+      if (live?.promise === promise) live = undefined;
+    };
+    promise.then((r) => r.source !== "live" && forget(), forget);
+  }
+  return live.promise;
+}
+
+async function fetchLive(apiKey: string, fromSnapshot: TrendSource): Promise<TrendSource> {
   const { items, errors } = await fetchTrending(SNAPSHOT_CATEGORY_IDS, { apiKey });
   if (items.length === 0) {
     return {

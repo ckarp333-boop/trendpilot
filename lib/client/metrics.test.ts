@@ -82,8 +82,13 @@ describe("formatHours", () => {
 });
 
 describe("MetricsStateSchema", () => {
-  it("rejects negative or fractional saved values", () => {
-    expect(MetricsStateSchema.safeParse({ enabled: {}, values: { a: { clicks: -1 } } }).success).toBe(false);
-    expect(MetricsStateSchema.safeParse({ enabled: {}, values: { a: { clicks: 1.5 } } }).success).toBe(false);
+  it("drops negative or fractional saved values (only for that post)", () => {
+    expect(MetricsStateSchema.parse({ enabled: {}, values: { a: { clicks: -1 } } }).values.a).toEqual({});
+    expect(MetricsStateSchema.parse({ enabled: {}, values: { a: { clicks: 1.5 } } }).values.a).toEqual({});
+  });
+
+  it("still rejects a state that isn't the right shape at all", () => {
+    expect(MetricsStateSchema.safeParse({ enabled: {}, values: "nope" }).success).toBe(false);
+    expect(MetricsStateSchema.safeParse(null).success).toBe(false);
   });
 });

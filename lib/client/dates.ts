@@ -27,15 +27,17 @@ export function startOfWeek(d: Date): Date {
 const DAYS = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
 
 /**
- * Suggested date for a concept's posting window: the next day (from today, inclusive) whose
- * name appears in the window, e.g. "Saturday 8:00-10:00 AM". Falls back to tomorrow.
+ * Suggested date for a concept's posting window: the soonest day (from today, inclusive) whose
+ * name appears in the window, e.g. "Saturday 8:00-10:00 AM" or "Sat or Sun". Falls back to tomorrow.
  */
 export function suggestedDate(postingWindow: string, today: Date = new Date()): string {
   const text = postingWindow.toLowerCase();
-  const target = DAYS.findIndex((d) => text.includes(d) || new RegExp(`\\b${d.slice(0, 3)}\\b`).test(text));
-  if (target === -1) return toISODate(addDays(today, 1));
-  const diff = (target - today.getDay() + 7) % 7;
-  return toISODate(addDays(today, diff));
+  // Several days can match ("Sat or Sun"): pick the soonest one, not the first in the week.
+  const diffs = DAYS.flatMap((d, i) =>
+    text.includes(d) || new RegExp(`\\b${d.slice(0, 3)}\\b`).test(text) ? [(i - today.getDay() + 7) % 7] : [],
+  );
+  if (diffs.length === 0) return toISODate(addDays(today, 1));
+  return toISODate(addDays(today, Math.min(...diffs)));
 }
 
 export function formatDay(d: Date): string {

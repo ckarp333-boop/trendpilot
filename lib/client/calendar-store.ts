@@ -48,15 +48,14 @@ export function normaliseHashtags(input: string): string[] {
 
 export function useCalendar() {
   const entries = useLocalStore(calendarStore);
-  const update = (fn: (list: CalendarEntry[]) => CalendarEntry[]) =>
-    calendarStore.write(fn(calendarStore.read()));
+  const update = (fn: (list: CalendarEntry[]) => CalendarEntry[]) => calendarStore.write(fn(calendarStore.read()));
 
   return {
     entries,
     add: (entry: Omit<CalendarEntry, "id" | "createdAt">) => {
       const full: CalendarEntry = { ...entry, id: crypto.randomUUID(), createdAt: new Date().toISOString() };
-      update((list) => [...list, full]);
-      return full;
+      const stored = update((list) => [...list, full]);
+      return { entry: full, stored };
     },
     remove: (id: string) => update((list) => list.filter((e) => e.id !== id)),
     markPosted: (id: string) =>
